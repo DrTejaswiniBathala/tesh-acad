@@ -21,9 +21,9 @@ export default function App() {
       <main>
         <section className="hero">
           <div className="container">
-            <h1>TESH ACAD International Consult</h1>
+            <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
             <p className="sub">
-              Admissions • Academic Consulting • SOP/CV • Research Guidance • Visa Support
+              Admissions • Academic Consulting • SOP/CV • Research Guidance • Visa Support • Skilled courses
             </p>
             <div className="cta">
               <a
@@ -46,41 +46,41 @@ export default function App() {
               <div className="card">
                 <h3>Admissions Roadmap</h3>
                 <ul className="list">
-                  <li>Profile evaluation & target countries</li>
-                  <li>Shortlisting (4–8 univs) with deadlines</li>
-                  <li>Application plan & checklist</li>
+                  <li>Profile Evaluation & Target Countries</li>
+                  <li>Shortlisting (4–8 Univs) with Deadlines</li>
+                  <li>Application Plan & Checklist</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>SOP/CV & LORs</h3>
                 <ul className="list">
-                  <li>Clear SOP/LOI structure & editing</li>
-                  <li>Impactful academic CV</li>
-                  <li>LOR guidance & templates</li>
+                  <li>Clear SOP/LOI Structure & Editing</li>
+                  <li>Impactful Academic CV</li>
+                  <li>LOR Guidance & Templates</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Scholarships & Funding</h3>
                 <ul className="list">
-                  <li>Merit/need options mapped</li>
-                  <li>Application pack review</li>
-                  <li>Fee-waiver opportunities</li>
+                  <li>Merit/need options Mapped</li>
+                  <li>Application pack Review</li>
+                  <li>Fee-waiver Opportunities</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Visa & Pre-Departure</h3>
                 <ul className="list">
-                  <li>Docs & financial planning</li>
-                  <li>Mock visa interview</li>
-                  <li>Housing & travel checklist</li>
+                  <li>Docs & Financial Planning</li>
+                  <li>Mock Visa Interview</li>
+                  <li>Housing & Travel Checklist</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Tests & Interviews</h3>
                 <ul className="list">
-                  <li>IELTS/TOEFL/GRE plan</li>
-                  <li>Interview practice</li>
-                  <li>Portfolio tips (where needed)</li>
+                  <li>IELTS/TOEFL/GRE Plan</li>
+                  <li>Interview Practice</li>
+                  <li>Portfolio Tips (where needed)</li>
                 </ul>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Get student guidance
+                Get Student Guidance
               </a>
             </div>
           </div>
@@ -105,33 +105,33 @@ export default function App() {
               <div className="card">
                 <h3>Visiting & Sabbatical</h3>
                 <ul className="list">
-                  <li>Host university mapping</li>
-                  <li>SoP/CV, dossier review</li>
-                  <li>Timeline & paperwork</li>
+                  <li>Host university Mapping</li>
+                  <li>SoP/CV, Dossier Review</li>
+                  <li>Timeline & Paperwork</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Research Collaboration</h3>
                 <ul className="list">
-                  <li>Partner discovery & MoUs</li>
-                  <li>PhD supervision matches</li>
-                  <li>Co-authorship planning</li>
+                  <li>Partner Discovery & MoUs</li>
+                  <li>PhD Supervision Matches</li>
+                  <li>Co-Authorship Planning</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Grants & Proposals</h3>
                 <ul className="list">
-                  <li>Calls shortlisting</li>
-                  <li>Proposal editing & budgets</li>
-                  <li>Submission workflows</li>
+                  <li>Calls Shortlisting</li>
+                  <li>Proposal Editing & Budgets</li>
+                  <li>Submission Workflows</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Workshops & Curriculum</h3>
                 <ul className="list">
-                  <li>Outcome-based modules</li>
-                  <li>Student projects set-up</li>
-                  <li>Assessment rubrics</li>
+                  <li>Outcome-based Modules</li>
+                  <li>Student Projects Set-up</li>
+                  <li>Assessment Rubrics</li>
                 </ul>
               </div>
             </div>
@@ -172,17 +172,17 @@ export default function App() {
               <div className="card">
                 <h3>Upskilling Programs</h3>
                 <ul className="list">
-                  <li>Custom training tracks</li>
-                  <li>Hybrid delivery</li>
-                  <li>Assessment & certs</li>
+                  <li>Custom Training Tracks</li>
+                  <li>Hybrid Delivery</li>
+                  <li>Assessment & Certs</li>
                 </ul>
               </div>
               <div className="card">
                 <h3>Academic Partnerships</h3>
                 <ul className="list">
-                  <li>MoUs & advisory boards</li>
-                  <li>Hackathons & challenges</li>
-                  <li>Brand presence on campus</li>
+                  <li>MoUs & Advisory Boards</li>
+                  <li>Hackathons & Challenges</li>
+                  <li>Brand presence on Campus</li>
                 </ul>
               </div>
             </div>
@@ -204,9 +204,9 @@ export default function App() {
           <div className="container narrow">
             <h2>About TESH ACAD</h2>
             <p>
-              We help students, faculty, and industry partners navigate admissions, research,
-              and collaboration with simple, step-by-step support. Clear timelines, transparent
-              process, and guidance you can follow without stress.
+              We help students, faculty, and industry partners navigate Admissions,Paper Publications,Research,  
+              and Collaboration with Simple, step-by-step Support. Clear Timelines, Transparent
+              Process, and Guidance you can follow without stress.
             </p>
           </div>
         </section>
@@ -216,13 +216,13 @@ export default function App() {
           <div className="container narrow">
             <h2>Admissions Timeline</h2>
             <ol className="steps">
-              <li><strong>Profile & Goals:</strong> discovery call, target intake & countries.</li>
-              <li><strong>Shortlist:</strong> 4–8 universities, admit chances, deadlines, budget.</li>
-              <li><strong>Documents:</strong> SOP/LOI, CV, LORs, transcripts, test plan.</li>
-              <li><strong>Applications:</strong> portals, fee waivers (where possible), submissions.</li>
-              <li><strong>Scholarships:</strong> apply in parallel; grants & assistantships.</li>
-              <li><strong>Admits & Visa:</strong> compare offers, finances, mock visa interview.</li>
-              <li><strong>Pre-departure:</strong> housing, tickets, health & packing checklist.</li>
+              <li><strong>Profile & Goals:</strong> Discovery call, Target intake & Countries.</li>
+              <li><strong>Shortlist:</strong> 4–8 Universities, Admit chances, Deadlines, Budget.</li>
+              <li><strong>Documents:</strong> SOP/LOI, CV, LORs, Transcripts, Test plan.</li>
+              <li><strong>Applications:</strong> Portals, Fee waivers (where possible), Submissions.</li>
+              <li><strong>Scholarships:</strong> Apply in parallel; Grants & Assistantships.</li>
+              <li><strong>Admits & Visa:</strong> Compare offers, Finances, Mock Visa Interview.</li>
+              <li><strong>Pre-departure:</strong> Housing, Tickets, Health & Packing Checklist.</li>
             </ol>
           </div>
         </section>
