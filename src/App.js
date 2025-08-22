@@ -23,7 +23,7 @@ export default function App() {
           <div className="container">
             <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
             <p className="sub">
-              Admissions • Academic Consulting • SOP/CV • Research Guidance • Visa Support • Skilled courses
+              Admissions • Academic Consulting • SOP/CV • Research Guidance • Visa Support • Skill Development Courses
             </p>
             <div className="cta">
               <a
@@ -250,7 +250,7 @@ export default function App() {
               </div>
               <div className="form-row">
                 <label>Phone / WhatsApp</label>
-                <input name="phone" type="tel" placeholder="+91 99857 44913" />
+                <input name="phone" type="tel" placeholder="+91 xxxxx xxxxx" />
               </div>
               <div className="form-row">
                 <label>Message</label>
@@ -269,7 +269,7 @@ export default function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  WhatsApp us (+91 99857 44913)
+                  WhatsApp us
                 </a>
               </p>
             </form>
