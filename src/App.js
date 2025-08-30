@@ -10,7 +10,9 @@ export default function App() {
           <nav>
             <a href="#students">Students</a>
             <a href="#faculty">Faculty</a>
+            <a href="#institutes">Institutes</a>
             <a href="#industry">Industry</a>
+            <a href="#team">Leadership</a>
             <a href="#about">About</a>
             <a className="btn" href="#contact">Contact</a>
           </nav>
@@ -23,7 +25,10 @@ export default function App() {
           <div className="container">
             <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
             <p className="sub">
-              Admissions • Academic Consulting • SOP/CV • Research Guidance • Visa Support • Skill Development Courses
+              Students • Faculty • Institutes • Industry — Global Collaboration & Innovation
+            </p>
+            <p className="sub small">
+              Admissions • Academic Consulting • SOP/CV • Research Guidance • Visa Support • Skill Development • MoUs with Institutes & Industry
             </p>
             <div className="cta">
               <a
@@ -34,6 +39,51 @@ export default function App() {
               >
                 Book on WhatsApp
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ================== Focus Snapshot ================== */}
+        <section className="section alt">
+          <div className="container">
+            <h2>Our Focus Areas</h2>
+            <div className="grid four">
+              <div className="card">
+                <h3>For Students</h3>
+                <ul className="list">
+                  <li>Skilled Certification Programs</li>
+                  <li>Internships & Placements</li>
+                  <li>Research & Higher Study Opportunities</li>
+                  <li>Entrepreneurship & Leadership Training</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>For Faculty</h3>
+                <ul className="list">
+                  <li>Transition – Academia to Industry</li>
+                  <li>Publications Support</li>
+                  <li>Research Support</li>
+                  <li>Industry Tie-ups for Projects</li>
+                  <li>Recruitment (B2B)</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>For Institutes</h3>
+                <ul className="list">
+                  <li>Industry MoUs (Consultancy & Research Project MoUs)</li>
+                  <li>Foreign University MoUs (B.Tech 2+2, 3+1)</li>
+                  <li>Recruitment Partnerships (B2B)</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>For Industry</h3>
+                <ul className="list">
+                  <li>Consultancy & Sponsored Projects</li>
+                  <li>Custom Upskilling Programs</li>
+                  <li>Campus Hiring & Intern Pipelines</li>
+                  <li>Academic Partnerships & Hackathons</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -103,35 +153,43 @@ export default function App() {
             <h2>For Faculty</h2>
             <div className="grid">
               <div className="card">
-                <h3>Visiting & Sabbatical</h3>
+                <h3>Transition – Academia to Industry</h3>
                 <ul className="list">
-                  <li>Host university Mapping</li>
-                  <li>SoP/CV, Dossier Review</li>
-                  <li>Timeline & Paperwork</li>
+                  <li>Career mapping & role readiness</li>
+                  <li>Resume/LinkedIn revamp & mock interviews</li>
+                  <li>Industry immersion & short projects</li>
                 </ul>
               </div>
               <div className="card">
-                <h3>Research Collaboration</h3>
+                <h3>Publications Support</h3>
                 <ul className="list">
-                  <li>Partner Discovery & MoUs</li>
-                  <li>PhD Supervision Matches</li>
-                  <li>Co-Authorship Planning</li>
+                  <li>Target journal shortlisting</li>
+                  <li>Manuscript editing & submission</li>
+                  <li>Responding to reviewers</li>
                 </ul>
               </div>
               <div className="card">
-                <h3>Grants & Proposals</h3>
+                <h3>Research Support</h3>
                 <ul className="list">
-                  <li>Calls Shortlisting</li>
-                  <li>Proposal Editing & Budgets</li>
-                  <li>Submission Workflows</li>
+                  <li>Partner discovery & proposals</li>
+                  <li>PhD supervision matches</li>
+                  <li>Grant budgets & workflows</li>
                 </ul>
               </div>
               <div className="card">
-                <h3>Workshops & Curriculum</h3>
+                <h3>Industry Tie-ups for Projects</h3>
                 <ul className="list">
-                  <li>Outcome-based Modules</li>
-                  <li>Student Projects Set-up</li>
-                  <li>Assessment Rubrics</li>
+                  <li>Sponsored research briefs</li>
+                  <li>Faculty PI alignment</li>
+                  <li>IP & milestone planning</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>Recruitment (B2B)</h3>
+                <ul className="list">
+                  <li>Adjunct/visiting roles</li>
+                  <li>L&D and corporate trainer pipelines</li>
+                  <li>Cross-institution opportunities</li>
                 </ul>
               </div>
             </div>
@@ -148,8 +206,59 @@ export default function App() {
           </div>
         </section>
 
+        {/* ================== For Institutes ================== */}
+        <section id="institutes" className="section">
+          <div className="container">
+            <h2>For Institutes</h2>
+            <div className="grid">
+              <div className="card">
+                <h3>Industry MoUs</h3>
+                <ul className="list">
+                  <li>Consultancy MoUs</li>
+                  <li>Research Project MoUs</li>
+                  <li>Advisory Boards & Centers of Excellence</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>Foreign University MoUs</h3>
+                <ul className="list">
+                  <li>B.Tech 2+2 pathways</li>
+                  <li>B.Tech 3+1 pathways</li>
+                  <li>Visiting faculty & joint certifications</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>Recruitment (B2B)</h3>
+                <ul className="list">
+                  <li>On-campus drives & virtual hiring</li>
+                  <li>Internship→Hire funnels</li>
+                  <li>Industry mentors & guest lectures</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>Programs & Exhibitions</h3>
+                <ul className="list">
+                  <li>Model exhibitions & revenue programs</li>
+                  <li>Outcome-based curriculum support</li>
+                  <li>Quality frameworks & rubrics</li>
+                </ul>
+              </div>
+            </div>
+            <div className="cta-center">
+              <a
+                className="btn big"
+                href="https://wa.me/919985744913?text=Hi%20TESH%20ACAD%2C%20let%27s%20discuss%20MoUs%20for%20our%20institute"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Start an MoU
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ================== For Industry ================== */}
-        <section id="industry" className="section">
+        <section id="industry" className="section alt">
           <div className="container">
             <h2>For Industry</h2>
             <div className="grid">
@@ -174,7 +283,7 @@ export default function App() {
                 <ul className="list">
                   <li>Custom Training Tracks</li>
                   <li>Hybrid Delivery</li>
-                  <li>Assessment & Certs</li>
+                  <li>Assessment & Certifications</li>
                 </ul>
               </div>
               <div className="card">
@@ -199,20 +308,93 @@ export default function App() {
           </div>
         </section>
 
-        {/* ================== About ================== */}
-        <section id="about" className="section alt">
+        {/* ================== Leadership / Team ================== */}
+        <section id="team" className="section">
+          <div className="container">
+            <h2>Our Leadership</h2>
+            <p className="sub center">Family-led Leadership, Globally Connected</p>
+            <div className="grid four">
+              <PersonCard
+                photo="/images/team/founder.jpg"
+                name="Dr. Urmila Bandaru"
+                role="Founder & CEO"
+                headliner="Global Educator & Industry Connector"
+                linkedin="https://www.linkedin.com/in/dr-urmila-bandaru-159a9040/"
+                badges={["Education", "Research", "Leadership", "Global Collaboration"]}
+              >
+                Ph.D. in Power Electronics; 27+ years in academia & research. Founder of TeSh Acad, building global placements, MoUs & experiential learning programs.
+              </PersonCard>
+
+              <PersonCard
+                photo="/images/team/tejaswini.jpg"
+                name="Dr. Tejaswini Bathala"
+                role="Managing Director"
+                headliner="Healthcare Analyst & Vedic Astrologer"
+                linkedin="https://www.linkedin.com/in/dr-tejaswini-bathala-66437b154/"
+                badges={["Strategy", "Product", "Healthcare IT", "Astrology"]}
+              >
+                Pharm.D + MBA (Pharma Mgmt). Former Business Analyst at Dedalus (3+ yrs, healthcare IT). Leads growth, partnerships & product at TeSh Acad; practices Modern Vedic Astrology.
+              </PersonCard>
+
+              <PersonCard
+                photo="/images/team/shravya.jpg"
+                name="Shravya Vani B"
+                role="Managing Director"
+                headliner="Events Manager & Creative Strategist"
+                linkedin="https://www.linkedin.com/in/shravya-vani-b-b38946201/"
+                badges={["Community", "Partnerships", "Events", "Technology"]}
+              >
+                MA International Events Management (University of Greenwich), B.Tech CSE. Event manager & community builder driving student programs and campus partnerships.
+              </PersonCard>
+
+              <PersonCard
+                photo="/images/team/chairman.jpg"
+                name="Bathala Venkata Chalapathi"
+                role="Chairman (Non-Executive)"
+                headliner="Industry Veteran & Strategic Mentor"
+                linkedin="https://www.linkedin.com/in/bathala-venkata-chalapathi-196243213/"
+                badges={["Governance", "Strategy", "Industry Leadership"]}
+              >
+                General Manager, Sri Rayalaseema Alkalies & Allied Chemicals Ltd (28+ yrs, Oils & Fats). Guides governance, operations & long-term strategy.
+              </PersonCard>
+            </div>
+          </div>
+        </section>
+
+        {/* ================== Why we exist ================== */}
+        <section className="section alt">
           <div className="container narrow">
-            <h2>About TESH ACAD</h2>
-            <p>
-              We help students, faculty, and industry partners navigate Admissions,Paper Publications,Research,  
-              and Collaboration with Simple, step-by-step Support. Clear Timelines, Transparent
-              Process, and Guidance you can follow without stress.
+            <h2>Why we exist</h2>
+            <ul className="bullets">
+              <li>Designing a strategic approach to ensure <strong>placements</strong> or <strong>entrepreneurial leadership</strong> for every student based on their abilities.</li>
+              <li><strong>Real-time project-based trainings</strong> for B.Tech & M.Tech students to pave paths into Masters / Industry / Research roles.</li>
+              <li><strong>27+ years</strong> of academic experience bridging education & global industry.</li>
+              <li><strong>Skilled certification programs</strong> tailored for industry readiness.</li>
+              <li><strong>Research & higher study</strong> opportunities with global exposure.</li>
+              <li>Connecting students with <strong>internships & placements</strong> worldwide.</li>
+            </ul>
+            <p className="center mt-3">
+              Explore more at{" "}
+              <a href="https://www.teshacad.org" target="_blank" rel="noreferrer" className="link">
+                www.teshacad.org
+              </a>
             </p>
           </div>
         </section>
 
-        {/* ================== Admissions Timeline (optional) ================== */}
-        <section id="timeline" className="section">
+        {/* ================== About ================== */}
+        <section id="about" className="section">
+          <div className="container narrow">
+            <h2>About TESH ACAD</h2>
+            <p>
+              We empower <strong>Students, Faculty, Institutes & Industry</strong> to navigate Admissions, Publications, Research,
+              and Collaboration with clear, step-by-step support. Simple timelines. Transparent processes. Guidance you can follow without stress.
+            </p>
+          </div>
+        </section>
+
+        {/* ================== Admissions Timeline ================== */}
+        <section id="timeline" className="section alt">
           <div className="container narrow">
             <h2>Admissions Timeline</h2>
             <ol className="steps">
@@ -294,6 +476,34 @@ export default function App() {
       >
         WA
       </a>
+    </div>
+  );
+}
+
+/* -------------------------- Helper Components -------------------------- */
+function PersonCard({ photo, name, role, headliner, children, linkedin, badges = [] }) {
+  return (
+    <div className="person">
+      <div className="avatar">
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+        <img src={photo} alt={`${name} – ${role}`} />
+      </div>
+      <div className="person-meta">
+        <h3>{name}</h3>
+        <p className="role">{role}</p>
+        {headliner && <p className="headliner">{headliner}</p>}
+      </div>
+      <p className="bio">{children}</p>
+      <div className="tags">
+        {badges.map((b) => (
+          <span key={b} className="tag">{b}</span>
+        ))}
+      </div>
+      {linkedin && (
+        <p className="link-out">
+          <a href={linkedin} target="_blank" rel="noreferrer">LinkedIn →</a>
+        </p>
+      )}
     </div>
   );
 }
