@@ -322,7 +322,7 @@ export default function App() {
                 linkedin="https://www.linkedin.com/in/dr-urmila-bandaru-159a9040/"
                 badges={["Education", "Research", "Leadership", "Global Collaboration"]}
               >
-                Ph.D. in Power Electronics; 27+ years in academia & research. Founder of TeSh Acad, building global placements, MoUs & experiential learning programs.
+                Ph.D. in Power Electronics; 27+ years in Academia & Research. Founder of TeSh Acad, building global placements, MoUs & experiential learning programs.
               </PersonCard>
 
               <PersonCard
@@ -333,7 +333,7 @@ export default function App() {
                 linkedin="https://www.linkedin.com/in/dr-tejaswini-bathala-66437b154/"
                 badges={["Strategy", "Product", "Healthcare IT", "Astrology"]}
               >
-                Pharm.D + MBA (Pharma Mgmt). Former Business Analyst at Dedalus (3+ yrs, healthcare IT). Leads growth, partnerships & product at TeSh Acad; practices Modern Vedic Astrology.
+                Pharm.D + MBA (Pharma Mgmt). Healthcare Business Analyst. Leads Growth, Partnerships & Product at TeSh Acad; practices Modern Vedic Astrology.
               </PersonCard>
 
               <PersonCard
@@ -344,18 +344,18 @@ export default function App() {
                 linkedin="https://www.linkedin.com/in/shravya-vani-b-b38946201/"
                 badges={["Community", "Partnerships", "Events", "Technology"]}
               >
-                MA International Events Management (University of Greenwich), B.Tech CSE. Event manager & community builder driving student programs and campus partnerships.
+                MA International Events Management (University of Greenwich), B.Tech CSE. Event Manager & Community Builder driving Student Programs and Campus Partnerships.
               </PersonCard>
 
               <PersonCard
                 photo="/images/team/chairman.jpg"
                 name="Bathala Venkata Chalapathi"
-                role="Chairman (Non-Executive)"
+                role="Chairman"
                 headliner="Industry Veteran & Strategic Mentor"
                 linkedin="https://www.linkedin.com/in/bathala-venkata-chalapathi-196243213/"
                 badges={["Governance", "Strategy", "Industry Leadership"]}
               >
-                General Manager, Sri Rayalaseema Alkalies & Allied Chemicals Ltd (28+ yrs, Oils & Fats). Guides governance, operations & long-term strategy.
+                Senior General Manager, Sri Rayalaseema Alkalies & Allied Chemicals Ltd (28+ yrs, Oils & Fats). Guides Governance, Operations & Long-term Strategy.
               </PersonCard>
             </div>
           </div>
