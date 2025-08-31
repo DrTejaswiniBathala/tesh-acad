@@ -319,8 +319,8 @@ export default function App() {
         <img src="/leadership/mother.jpg" alt="Dr. Urmila Bandaru – Founder & CEO" className="profile-img" />
         <h3>Dr. Urmila Bandaru</h3>
         <p><strong>Founder & CEO</strong></p>
-        <p>Global Educator & Industry Connector</p>
-        <p>Ph.D. in Power Electronics; 27+ years in Academia & Research. Founder of TeSh Acad, building global placements, MoUs & experiential learning programs.</p>
+        <p>Founder of TeSh Acad</p>
+        <p>Ph.D. in Power Electronics; 27+ years in Academia & Research, building global placements, MoUs & experiential learning programs. Global Educator & Industry Connector</p>
       </div>
 
       {/* Managing Director */}
@@ -328,8 +328,8 @@ export default function App() {
         <img src="/leadership/tejaswini.jpg" alt="Dr. Tejaswini Bathala – Managing Director" className="profile-img" />
         <h3>Dr. Tejaswini Bathala</h3>
         <p><strong>Managing Director</strong></p>
-        <p>Healthcare Analyst & Vedic Astrologer</p>
-        <p>Pharm.D + MBA (Pharma Mgmt). Leads Growth, Partnerships & Product at TeSh Acad; practices Modern Vedic Astrology.</p>
+        <p>Leads Growth, Partnerships & Product at TeSh Acad</p>
+        <p>Healthcare IT Business Analyst & Modern Vedic Astrologer. An MBA and Doctor of Pharmacy Graduate. .</p>
       </div>
 
       {/* Managing Director */}
@@ -337,8 +337,8 @@ export default function App() {
         <img src="/leadership/shravya.jpg" alt="Shravya Vani B – Managing Director" className="profile-img" />
         <h3>Shravya Vani B</h3>
         <p><strong>Managing Director</strong></p>
-        <p>Events Manager & Creative Strategist</p>
-        <p>MA International Events Management (University of Greenwich), B.Tech CSE. Event Manager & Community Builder driving Student Programs and Campus Partnerships.</p>
+        <p>Creative Strategist at Tesh Acad</p>
+        <p>Events Manager. Computer Science Engineer. "Miss Gorgeous" at India's Miss TGPC Season 11. "Miss Congeniality" titleholder. Recipient of the APSCHE Community Service Award 2023. Currently pursuing Masters in International Events Management at University of Greenwich, London.</p>
       </div>
 
     
