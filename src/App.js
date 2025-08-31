@@ -311,7 +311,7 @@ export default function App() {
         {/* ================== Leadership ================== */}
 <section id="leadership" className="section">
   <div className="container">
-    <h2>Family-led Leadership, Globally Connected</h2>
+    <h2>Fmily led Leadership, Globally Connected</h2>
     <div className="grid">
       
       {/* Founder & CEO */}
@@ -341,15 +341,7 @@ export default function App() {
         <p>MA International Events Management (University of Greenwich), B.Tech CSE. Event Manager & Community Builder driving Student Programs and Campus Partnerships.</p>
       </div>
 
-      {/* Chairman */}
-      <div className="card">
-        <img src="/leadership/chalapathi.jpg" alt="Bathala Venkata Chalapathi – Chairman" className="profile-img" />
-        <h3>Bathala Venkata Chalapathi</h3>
-        <p><strong>Chairman</strong></p>
-        <p>Industry Veteran & Strategic Mentor</p>
-        <p>Senior General Manager, Sri Rayalaseema Alkalies & Allied Chemicals Ltd (28+ yrs, Oils & Fats). Guides Governance, Operations & Long-term Strategy.</p>
-      </div>
-
+    
     </div>
   </div>
 </section>
