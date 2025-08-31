@@ -308,58 +308,52 @@ export default function App() {
           </div>
         </section>
 
-        {/* ================== Leadership / Team ================== */}
-        <section id="team" className="section">
-          <div className="container">
-            <h2>Our Leadership</h2>
-            <p className="sub center">Family-led Leadership, Globally Connected</p>
-            <div className="grid four">
-              <PersonCard
-                photo="/images/team/founder.jpg"
-                name="Dr. Urmila Bandaru"
-                role="Founder & CEO"
-                headliner="Global Educator & Industry Connector"
-                linkedin="https://www.linkedin.com/in/dr-urmila-bandaru-159a9040/"
-                badges={["Education", "Research", "Leadership", "Global Collaboration"]}
-              >
-                Ph.D. in Power Electronics; 27+ years in Academia & Research. Founder of TeSh Acad, building global placements, MoUs & experiential learning programs.
-              </PersonCard>
+        {/* ================== Leadership ================== */}
+<section id="leadership" className="section">
+  <div className="container">
+    <h2>Family-led Leadership, Globally Connected</h2>
+    <div className="grid">
+      
+      {/* Founder & CEO */}
+      <div className="card">
+        <img src="/leadership/mother.jpg" alt="Dr. Urmila Bandaru – Founder & CEO" className="profile-img" />
+        <h3>Dr. Urmila Bandaru</h3>
+        <p><strong>Founder & CEO</strong></p>
+        <p>Global Educator & Industry Connector</p>
+        <p>Ph.D. in Power Electronics; 27+ years in Academia & Research. Founder of TeSh Acad, building global placements, MoUs & experiential learning programs.</p>
+      </div>
 
-              <PersonCard
-                photo="/images/team/tejaswini.jpg"
-                name="Dr. Tejaswini Bathala"
-                role="Managing Director"
-                headliner="Healthcare Analyst & Vedic Astrologer"
-                linkedin="https://www.linkedin.com/in/dr-tejaswini-bathala-66437b154/"
-                badges={["Strategy", "Product", "Healthcare IT", "Astrology"]}
-              >
-                Pharm.D + MBA (Pharma Mgmt). Healthcare Business Analyst. Leads Growth, Partnerships & Product at TeSh Acad; practices Modern Vedic Astrology.
-              </PersonCard>
+      {/* Managing Director */}
+      <div className="card">
+        <img src="/leadership/tejaswini.jpg" alt="Dr. Tejaswini Bathala – Managing Director" className="profile-img" />
+        <h3>Dr. Tejaswini Bathala</h3>
+        <p><strong>Managing Director</strong></p>
+        <p>Healthcare Analyst & Vedic Astrologer</p>
+        <p>Pharm.D + MBA (Pharma Mgmt). Leads Growth, Partnerships & Product at TeSh Acad; practices Modern Vedic Astrology.</p>
+      </div>
 
-              <PersonCard
-                photo="/images/team/shravya.jpg"
-                name="Shravya Vani B"
-                role="Managing Director"
-                headliner="Events Manager & Creative Strategist"
-                linkedin="https://www.linkedin.com/in/shravya-vani-b-b38946201/"
-                badges={["Community", "Partnerships", "Events", "Technology"]}
-              >
-                MA International Events Management (University of Greenwich), B.Tech CSE. Event Manager & Community Builder driving Student Programs and Campus Partnerships.
-              </PersonCard>
+      {/* Managing Director */}
+      <div className="card">
+        <img src="/leadership/shravya.jpg" alt="Shravya Vani B – Managing Director" className="profile-img" />
+        <h3>Shravya Vani B</h3>
+        <p><strong>Managing Director</strong></p>
+        <p>Events Manager & Creative Strategist</p>
+        <p>MA International Events Management (University of Greenwich), B.Tech CSE. Event Manager & Community Builder driving Student Programs and Campus Partnerships.</p>
+      </div>
 
-              <PersonCard
-                photo="/images/team/chairman.jpg"
-                name="Bathala Venkata Chalapathi"
-                role="Chairman"
-                headliner="Industry Veteran & Strategic Mentor"
-                linkedin="https://www.linkedin.com/in/bathala-venkata-chalapathi-196243213/"
-                badges={["Governance", "Strategy", "Industry Leadership"]}
-              >
-                Senior General Manager, Sri Rayalaseema Alkalies & Allied Chemicals Ltd (28+ yrs, Oils & Fats). Guides Governance, Operations & Long-term Strategy.
-              </PersonCard>
-            </div>
-          </div>
-        </section>
+      {/* Chairman */}
+      <div className="card">
+        <img src="/leadership/chalapathi.jpg" alt="Bathala Venkata Chalapathi – Chairman" className="profile-img" />
+        <h3>Bathala Venkata Chalapathi</h3>
+        <p><strong>Chairman</strong></p>
+        <p>Industry Veteran & Strategic Mentor</p>
+        <p>Senior General Manager, Sri Rayalaseema Alkalies & Allied Chemicals Ltd (28+ yrs, Oils & Fats). Guides Governance, Operations & Long-term Strategy.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         {/* ================== Why we exist ================== */}
         <section className="section alt">
@@ -373,13 +367,7 @@ export default function App() {
               <li><strong>Research & higher study</strong> opportunities with global exposure.</li>
               <li>Connecting students with <strong>internships & placements</strong> worldwide.</li>
             </ul>
-            <p className="center mt-3">
-              Explore more at{" "}
-              <a href="https://www.teshacad.org" target="_blank" rel="noreferrer" className="link">
-                www.teshacad.org
-              </a>
-            </p>
-          </div>
+                     </div>
         </section>
 
         {/* ================== About ================== */}

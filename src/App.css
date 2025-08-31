@@ -202,3 +202,55 @@ h2 + .sub{margin-top:-6px;margin-bottom:18px}
 @media (prefers-reduced-motion:reduce){
   .btn,.card,.person,.whats-float{transition:none!important;animation:none!important}
 }
+
+
+
+
+/* --------------------------- Leadership Section --------------------------- */
+.leadership-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.leadership-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Leadership images */
+.profile-img {
+  width: 100%;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+/* Leadership text */
+.leadership-card h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.leadership-card p {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 4px 0;
+}
+
+.leadership-card strong {
+  color: var(--brand);
+}
+
