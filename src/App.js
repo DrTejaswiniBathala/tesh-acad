@@ -311,7 +311,7 @@ export default function App() {
         {/* ================== Leadership ================== */}
 <section id="leadership" className="section">
   <div className="container">
-    <h2>Fmily led Leadership, Globally Connected</h2>
+    <h2>Leadership, Globally Connected</h2>
     <div className="grid">
       
       {/* Founder & CEO */}
