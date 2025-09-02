@@ -420,7 +420,7 @@ export default function App() {
         <section id="about" className="section alt beige">
   <div className="container narrow center">
     <h2>About Us</h2>
-    <p className="sub">Know more about TESH ACAD International Consultants</p>
+    <p className="sub">ife by Design, not by Default.</p>
   </div>
   <div className="about-tesh">
     <p>
@@ -435,8 +435,8 @@ export default function App() {
       making the process transparent and stress-free.
     </p>
     <p>
-      TESH ACAD stands beside you with clarity, care, and trust, so that every 
-      dream has the chance to grow into a real achievement.
+      We stand beside you with clarity, care, and trust, so that every 
+      dream of your's has the chance to grow into a real achievement.
     </p>
   </div>
   <h2 className="brand-tagline">
