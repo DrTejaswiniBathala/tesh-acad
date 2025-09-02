@@ -420,7 +420,7 @@ export default function App() {
         <section id="about" className="section alt beige">
   <div className="container narrow center">
     <h2>About Us</h2>
-    <p className="sub">ife by Design, not by Default.</p>
+    <p className="sub">Life by Design, not by Default.</p>
   </div>
   <div className="about-tesh">
     <p>
