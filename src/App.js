@@ -11,11 +11,9 @@ export default function App() {
       {/* Top Navigation */}
       <header className="nav">
         <div className="container">
-          
-
           <nav>
             <a href="#students">Students</a>
-            <a href="#faculty">Faculty</a>
+            <a href="#Professionls">Professionals</a>
             <a href="#institutes">Institutes</a>
             <a href="#industry">Industry</a>
             <a href="#team">Leadership</a>
@@ -25,47 +23,42 @@ export default function App() {
         </div>
       </header>
 
-
-
       {/* ================== MAIN CONTENT ================== */}
       <main>
-
         {/* Hero */}
-<main>
-  <section className="hero">
-    <div className="container hero-content">
+        <main>
+          <section className="hero">
+            <div className="container hero-content">
+              {/* Left: Logo */}
+              <div className="hero-left">
+                <img src="/logo-circle.png" alt="TESH ACAD Logo" className="hero-logo" />
+              </div>
 
-      {/* Left: Logo */}
-      <div className="hero-left">
-        <img src="/logo-circle.png" alt="TESH ACAD Logo" className="hero-logo" />
-      </div>
+              {/* Right: Heading + tagline + button */}
+              <div className="hero-right">
+                <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
+                <p className="sub">
+                  Admissions • Research • Visa • Skills • Jobs • MoUs — Connecting Talent with the World
+                </p>
+                <div className="cta">
+                  <a
+                    className="btn big"
+                    href="https://wa.me/919985744913?text=Hi%20TESH%20ACAD%2C%20I%27d%20like%20a%20consultation"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Book on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
 
-      {/* Right: Heading + tagline + button */}
-      <div className="hero-right">
-        <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
-        <p className="sub">
-          Admissions • Research • Visa • Skills • Jobs • MoUs — Connecting Talent with the World
-        </p>
-        <div className="cta">
-          <a
-            className="btn big"
-            href="https://wa.me/919985744913?text=Hi%20TESH%20ACAD%2C%20I%27d%20like%20a%20consultation"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Book on WhatsApp
-          </a>
+        <div className="reg-info">
+          <p>GSTIN - 37AQZPB1669H1ZC</p>
+          <p>UDYAM-AP-07-0096832</p>
         </div>
-      </div>
-
-    </div>
-  </section>
-</main>
-
-<div className="reg-info">
-  <p>GSTIN - 37AQZPB1669H1ZC</p>
-  <p>UDYAM-AP-07-0096832</p>
-</div>
 
         {/* ================== Focus Snapshot ================== */}
         <section className="section alt">
@@ -82,7 +75,7 @@ export default function App() {
                 </ul>
               </div>
               <div className="card">
-                <h3>For Faculty</h3>
+                <h3>For Professionals</h3>
                 <ul className="list">
                   <li>Transition – Academia to Industry</li>
                   <li>Publications Support</li>
@@ -171,10 +164,10 @@ export default function App() {
           </div>
         </section>
 
-        {/* ================== For Faculty ================== */}
-        <section id="faculty" className="section alt">
+        {/* ================== For Professionals ================== */}
+        <section id="Professionls" className="section alt">
           <div className="container">
-            <h2>For Faculty</h2>
+            <h2>For Professionals</h2>
             <div className="grid">
               <div className="card">
                 <h3>Transition – Academia to Industry</h3>
@@ -224,7 +217,7 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Discuss a faculty plan
+                Discuss a Professional plan
               </a>
             </div>
           </div>
@@ -298,7 +291,7 @@ export default function App() {
                 <h3>Sponsored Projects</h3>
                 <ul className="list">
                   <li>Capstone & research briefs</li>
-                  <li>Faculty PI alignment</li>
+                  <li>Faculty/Professional PI alignment</li>
                   <li>IP & timeline planning</li>
                 </ul>
               </div>
@@ -333,123 +326,116 @@ export default function App() {
         </section>
 
         {/* =============== Leadership Section =============== */}
-<section id="team" className="section">
-  <div className="container center">
-    <h2>Leadership</h2>
-    <p className="sub">Meet our leaders driving TeSh Acad International Consultants</p>
+        <section id="team" className="section">
+          <div className="container center">
+            <h2>Leadership</h2>
+            <p className="sub">Meet our leaders driving TeSh Acad International Consultants</p>
 
-    <div className="grid four">
-      
+            <div className="grid four">
+              {/* Urmila */}
+              <div className="leadership-card">
+                <img src={urmilaImg} alt="Urmila" className="profile-img" />
+                <h3>Dr. Urmila Bandaru</h3>
+                <p><strong>Founder & CEO</strong></p>
+                <p>PhD in Electrical Engineering | Professor & Research Collaborator</p>
+                <p>Guiding TeSh Acad in academics, MOUs, and global education pathways.</p>
+                <a 
+                  href="https://www.linkedin.com/in/dr-urmila-bandaru-159a9040/" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="linkedin-link"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </div>
 
-      {/* Urmila */}
-      <div className="leadership-card">
-        <img src={urmilaImg} alt="Urmila" className="profile-img" />
-        <h3>Dr. Urmila Bandaru</h3>
-        <p><strong>Founder & CEO</strong></p>
-        <p>PhD in Electrical Engineering | Professor & Research Collaborator</p>
-        <p>Guiding TeSh Acad in academics, MOUs, and global education pathways.</p>
-        <a 
-          href="https://www.linkedin.com/in/dr-urmila-bandaru-159a9040/" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="linkedin-link"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
-      </div>
+              {/* Chalapathi */}
+              <div className="leadership-card">
+                <img src={chalapathiImg} alt="Chalapathi" className="profile-img" />
+                <h3>B Venkata Chalapathi</h3>
+                <p><strong>Executive Advisor </strong></p>
+                <p>Industry Professional | Mechanical Engineer </p>
+                <p>Advising with global strategy and collaborations.</p>
+                <a 
+                  href="https://www.linkedin.com/in/bathala-venkata-chalapathi-196243213/" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="linkedin-link"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </div>
 
+              {/* Tejaswini */}
+              <div className="leadership-card">
+                <img src={tejaswiniImg} alt="Tejaswini" className="profile-img" />
+                <h3>Dr. Tejaswini Bathala</h3>
+                <p><strong>CTO</strong></p>
+                <p>MBA | Doctor of Pharmacy | Modern Vedic Astrologist</p>
+                <p>Leading strategy, innovation, and global partnerships at TeSh Acad.</p>
+                <a 
+                  href="https://www.linkedin.com/in/dr-tejaswini-bathala-66437b154/" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="linkedin-link"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </div>
 
-{/* Chalapathi */}
-      <div className="leadership-card">
-        <img src={chalapathiImg} alt="Chalapathi" className="profile-img" />
-        <h3>B Venkata Chalapathi</h3>
-        <p><strong>Executive Advisor </strong></p>
-        <p>Industry Professional | Mechanical Engineer </p>
-        <p>Advising with global strategy and collaborations.</p>
-        <a 
-          href="https://www.linkedin.com/in/bathala-venkata-chalapathi-196243213/" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="linkedin-link"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
-      </div>
+              {/* Shravya */}
+              <div className="leadership-card">
+                <img src={shravyaImg} alt="Shravya Vani" className="profile-img" />
+                <h3>Miss Gorgeous Shravya Vani </h3>
+                <p><strong>Managing Director</strong></p>
+                <p>MA International Events Management | Computer Science Engineer </p>
+                <p>Driving organizational growth, creativity, and partnerships globally.</p>
+                <a 
+                  href="https://www.linkedin.com/in/shravya-vani-b-b38946201/" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="linkedin-link"
+                >
+                  <i className="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-
-      {/* Tejaswini */}
-      <div className="leadership-card">
-        <img src={tejaswiniImg} alt="Tejaswini" className="profile-img" />
-        <h3>Dr. Tejaswini Bathala</h3>
-        <p><strong>CTO</strong></p>
-        <p>MBA | Doctor of Pharmacy | Modern Vedic Astrologist</p>
-        <p>Leading strategy, innovation, and global partnerships at TeSh Acad.</p>
-        <a 
-          href="https://www.linkedin.com/in/dr-tejaswini-bathala-66437b154/" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="linkedin-link"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
-      </div>
-
-      {/* Shravya */}
-      <div className="leadership-card">
-        <img src={shravyaImg} alt="Shravya Vani" className="profile-img" />
-        <h3>Miss Gorgeous Shravya Vani </h3>
-        <p><strong>Managing Director</strong></p>
-        <p>MA International Events Management | Computer Science Engineer </p>
-        <p>Driving organizational growth, creativity, and partnerships globally.</p>
-        <a 
-          href="https://www.linkedin.com/in/shravya-vani-b-b38946201/" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="linkedin-link"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-{/* ================== About Us ================== */}
+        {/* ================== About Us ================== */}
         <section id="about" className="section alt beige">
-  <div className="container narrow center">
-    <h2>About Us</h2>
-    <p className="sub">Life by Design, not by Default.</p>
-  </div>
-  <div className="about-tesh">
-    <p>
-      At TESH ACAD, we believe learning and growth should feel simple, clear, 
-      and supportive—not confusing or stressful. Education is more than just 
-      books or exams; it is about building confidence, finding the right 
-      direction, and moving forward with purpose.
-    </p>
-    <p>
-      We guide every step of the journey—whether it is higher studies, finding 
-      the right job, exploring research, or connecting with global opportunities—
-      making the process transparent and stress-free.
-    </p>
-    <p>
-      We stand beside you with clarity, care, and trust, so that every 
-      dream of your's has the chance to grow into a real achievement.
-    </p>
-  </div>
-  <h2 className="brand-tagline">
-    From Learning to Success, From Success to Earning.
-  </h2>
-</section>
+          <div className="container narrow center">
+            <h2>About Us</h2>
+            <p className="sub">Life by Design, not by Default.</p>
+          </div>
+          <div className="about-tesh">
+            <p>
+              At TESH ACAD, we believe learning and growth should feel simple, clear, 
+              and supportive—not confusing or stressful. Education is more than just 
+              books or exams; it is about building confidence, finding the right 
+              direction, and moving forward with purpose.
+            </p>
+            <p>
+              We guide every step of the journey—whether it is higher studies, finding 
+              the right job, exploring research, or connecting with global opportunities—
+              making the process transparent and stress-free.
+            </p>
+            <p>
+              We stand beside you with clarity, care, and trust, so that every 
+              dream of your's has the chance to grow into a real achievement.
+            </p>
+          </div>
+          <h2 className="brand-tagline">
+            From Learning to Success, From Success to Earning.
+          </h2>
+        </section>
 
         {/* ================== Contact ================== */}
         <section id="contact" className="section">
           <div className="container narrow contact">
             <h2>Contact</h2>
             <p>Tell us your goal. We’ll reply within 24 hours.</p>
-
 
             <form
               action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT"
@@ -493,12 +479,60 @@ export default function App() {
           </div>
         </section>
 
+        {/* ================== Terms & Conditions ================== */}
+        <section id="terms" className="section alt">
+          <div className="container narrow">
+            <h2>Terms & Conditions</h2>
+            <p>
+              These Terms & Conditions govern your use of TeSh Acad International Consultants’
+              website and services. By using our services, you agree to comply with them.
+            </p>
+            <p>
+              Services include consultancy for students, professionals, institutions, and
+              industry. We provide mentoring, admissions support, research collaboration, and
+              placements — but final outcomes rest with third-party institutions.
+            </p>
+            <p>
+              Fees once paid are non-refundable unless stated in writing. Payments should only
+              be made through official TeSh Acad channels.
+            </p>
+            <p>
+              These Terms are governed by Indian law, under the jurisdiction of courts in
+              Andhra Pradesh.
+            </p>
+          </div>
+        </section>
+
+        {/* ================== Privacy Policy ================== */}
+        <section id="privacy" className="section">
+          <div className="container narrow">
+            <h2>Privacy Policy</h2>
+            <p>
+              TeSh Acad International Consultants (“TeSh Acad”, “we”, “our”) values your
+              privacy. This Privacy Policy explains how we collect, use, and safeguard your
+              information.
+            </p>
+            <ul>
+              <li>We may collect your name, email, phone number, education/professional details.</li>
+              <li>We use your information to deliver consultancy services, respond to inquiries,
+                  confirm registrations, and send updates.</li>
+              <li>Your information is never sold or traded to third parties.</li>
+              <li>You can opt out of marketing by emailing connect@teshacad.org.</li>
+            </ul>
+            <p>
+              📧 connect@teshacad.org <br />
+              📞 +91 99857 44913
+            </p>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          © {new Date().getFullYear()} TESH ACAD. All rights reserved.
+          © {new Date().getFullYear()} TESH ACAD. All rights reserved. | 
+          <a href="#privacy" className="ml-2">Privacy Policy</a> | 
+          <a href="#terms" className="ml-2">Terms & Conditions</a>
         </div>
       </footer>
 
