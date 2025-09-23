@@ -8,52 +8,90 @@ import "./App.css";
 export default function App() {
   return (
     <div className="app">
-      {/* Top Navigation */}
-      <header className="nav">
-        <div className="container">
-          <nav>
-            <a href="#students">Students</a>
-            <a href="#Professionls">Professionals</a>
-            <a href="#institutes">Institutes</a>
-            <a href="#industry">Industry</a>
-            <a href="#team">Leadership</a>
-            <a href="#about">About</a>
-            <a className="btn" href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
+  {/* Top Navigation */}
+  <header className="nav">
+    <div className="container">
+      <nav className="nav-left">
+        <a href="#students">Students</a>
+        <a href="#Professionls">Professionals</a>
+        <a href="#institutes">Institutes</a>
+        <a href="#industry">Industry</a>
+        <a href="#team">Leadership</a>
+        <a href="#about">About</a>
+        <a className="btn" href="#contact">Contact</a>
+      </nav>
+
+      {/* Social + Email Icons – aligned right */}
+      <div className="nav-icons">
+        {/* Emails with envelope + text */}
+  <a
+    href="mailto:connect@teshacad.org?subject=Enquiry from TESH ACAD Website&body=Hello TESH ACAD Team,"
+    className="email-link"
+    aria-label="Email connect@teshacad.org"
+  >
+    <i className="fas fa-envelope"></i> connect@teshacad.org
+  </a>
+
+  <a
+    href="mailto:urmila.ceo@teshacad.org?subject=Message for Dr. Urmila&body=Dear Dr. Urmila,"
+    className="email-link"
+    aria-label="Email urmila.ceo@teshacad.org"
+  >
+    <i className="fas fa-envelope"></i> urmila.ceo@teshacad.org
+  </a>
+
+        {/* Social Icons */}
+        <a
+          href="https://www.instagram.com/tesh_acad/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+        >
+          <i className="fab fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/tesh-acad-international-consultants"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i className="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
 
       {/* ================== MAIN CONTENT ================== */}
       <main>
         {/* Hero */}
-        <main>
-          <section className="hero">
-            <div className="container hero-content">
-              {/* Left: Logo */}
-              <div className="hero-left">
-                <img src="/logo-circle.png" alt="TESH ACAD Logo" className="hero-logo" />
-              </div>
+        <section className="hero">
+          <div className="container hero-content">
+            {/* Left: Logo */}
+            <div className="hero-left">
+              <img src="/logo-circle.png" alt="TESH ACAD Logo" className="hero-logo" />
+            </div>
 
-              {/* Right: Heading + tagline + button */}
-              <div className="hero-right">
-                <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
-                <p className="sub">
-                  Admissions • Research • Visa • Skills • Jobs • MoUs — Connecting Talent with the World
-                </p>
-                <div className="cta">
-                  <a
-                    className="btn big"
-                    href="https://wa.me/919985744913?text=Hi%20TESH%20ACAD%2C%20I%27d%20like%20a%20consultation"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Book on WhatsApp
-                  </a>
-                </div>
+            {/* Right: Heading + tagline + button */}
+            <div className="hero-right">
+              <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
+              <p className="sub">
+                Admissions • Research • Visa • Skills • Jobs • MoUs — Connecting Talent with the World
+              </p>
+              <div className="cta">
+                <a
+                  className="btn big"
+                  href="https://wa.me/919985744913?text=Hi%20TESH%20ACAD%2C%20I%27d%20like%20a%20consultation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Book on WhatsApp
+                </a>
               </div>
             </div>
-          </section>
-        </main>
+          </div>
+        </section>
 
         <div className="reg-info">
           <p>GSTIN - 37AQZPB1669H1ZC</p>
@@ -186,11 +224,14 @@ export default function App() {
                 </ul>
               </div>
               <div className="card">
-                <h3>Research Support</h3>
+                <h3>Research, Conference Participation</h3>
                 <ul className="list">
                   <li>Partner discovery & proposals</li>
                   <li>PhD supervision matches</li>
                   <li>Grant budgets & workflows</li>
+                  <li>Join as co-author in papers for IEEE and International Conferences</li>
+                  <li>Gain hands on skills in - Programming (Python, C++, Java) ; MATLAB/Simulink Simulations; Research Tools (LaTeX, Mendeley, Emndnote); Technical Writing and Documentation</li>
+                  <li>One author from each group to present a paper on International Platform</li>
                 </ul>
               </div>
               <div className="card">
@@ -199,6 +240,15 @@ export default function App() {
                   <li>Sponsored research briefs</li>
                   <li>Faculty PI alignment</li>
                   <li>IP & milestone planning</li>
+                </ul>
+              </div>
+              <div className="card">
+                <h3>Live Projects</h3>
+                <ul className="list">
+                  <li>Software and App Development</li>
+                  <li>AI/ML & Data Analytics</li>
+                  <li>Power Electronics and Smart Grids</li>
+                  <li>Healthcare Tech and Simulations</li>
                 </ul>
               </div>
               <div className="card">
@@ -478,63 +528,16 @@ export default function App() {
             </form>
           </div>
         </section>
-
-        {/* ================== Terms & Conditions ================== */}
-        <section id="terms" className="section alt">
-          <div className="container narrow">
-            <h2>Terms & Conditions</h2>
-            <p>
-              These Terms & Conditions govern your use of TeSh Acad International Consultants’
-              website and services. By using our services, you agree to comply with them.
-            </p>
-            <p>
-              Services include consultancy for students, professionals, institutions, and
-              industry. We provide mentoring, admissions support, research collaboration, and
-              placements — but final outcomes rest with third-party institutions.
-            </p>
-            <p>
-              Fees once paid are non-refundable unless stated in writing. Payments should only
-              be made through official TeSh Acad channels.
-            </p>
-            <p>
-              These Terms are governed by Indian law, under the jurisdiction of courts in
-              Andhra Pradesh.
-            </p>
-          </div>
-        </section>
-
-        {/* ================== Privacy Policy ================== */}
-        <section id="privacy" className="section">
-          <div className="container narrow">
-            <h2>Privacy Policy</h2>
-            <p>
-              TeSh Acad International Consultants (“TeSh Acad”, “we”, “our”) values your
-              privacy. This Privacy Policy explains how we collect, use, and safeguard your
-              information.
-            </p>
-            <ul>
-              <li>We may collect your name, email, phone number, education/professional details.</li>
-              <li>We use your information to deliver consultancy services, respond to inquiries,
-                  confirm registrations, and send updates.</li>
-              <li>Your information is never sold or traded to third parties.</li>
-              <li>You can opt out of marketing by emailing connect@teshacad.org.</li>
-            </ul>
-            <p>
-              📧 connect@teshacad.org <br />
-              📞 +91 99857 44913
-            </p>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}
       <footer className="footer">
-        <div className="container">
-          © {new Date().getFullYear()} TESH ACAD. All rights reserved. | 
-          <a href="#privacy" className="ml-2">Privacy Policy</a> | 
-          <a href="#terms" className="ml-2">Terms & Conditions</a>
-        </div>
-      </footer>
+  <div className="container">
+    © {new Date().getFullYear()} TESH ACAD. All rights reserved. | 
+    <a href="/policies.html" className="ml-2">Terms & Privacy</a>
+  </div>
+</footer>
+
 
       {/* Floating WhatsApp button */}
       <a

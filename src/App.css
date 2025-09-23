@@ -57,25 +57,124 @@ a:hover { opacity:.9 }
 
 /* ---------- Navigation ---------- */
 .nav {
-  position:sticky; top:0; z-index:100;
-  background:#fff;
-  border-bottom:1px solid #efeadf;
-  backdrop-filter:saturate(140%) blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #efeadf;
+  backdrop-filter: saturate(140%) blur(6px);
 }
-.nav .container {
-  display:flex; align-items:center; justify-content:center;
-  gap:18px; height:64px;
-}
-.nav nav { display:flex; gap:18px; align-items:center; overflow-x:auto }
-.nav nav a { font-weight:600; white-space:nowrap }
 
-.brand-logo {
-  height:40px; width:40px; border-radius:50%;
-  object-fit:cover; display:block;
-  transition:transform .2s ease, box-shadow .2s ease;
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left = links, right = icons/emails */
+  gap: 18px;
+  height: 64px;
 }
-.brand-logo:hover { transform:scale(1.05); box-shadow:0 4px 12px rgba(154,95,12,.25) }
-@media(max-width:640px){ .brand-logo{height:32px;width:32px} }
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  overflow-x: auto;
+}
+
+.nav-left a {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- RIGHT SIDE ICONS & EMAILS ---------- */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* space between each item */
+}
+
+/* Emails (text links) */
+.nav-icons .email-link {
+  font-size: 14px;
+  color: #c49a6c; /* temple brown */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-icons .email-link:hover {
+  color: #a56a2c;
+  text-decoration: underline;
+}
+
+/* Social icons (Instagram, LinkedIn) */
+.nav-icons .icon-link {
+  font-size: 18px;
+  color: #c49a6c;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-icons .icon-link:hover {
+  color: #a56a2c;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .nav .container {
+    flex-wrap: wrap; /* stack items */
+    justify-content: center;
+    gap: 8px;
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .nav-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .nav-icons .email-link {
+    font-size: 12px;
+  }
+
+  .nav-icons .icon-link {
+    font-size: 16px;
+  }
+}
+.email-link i {
+  margin-right: 6px;
+}
+
+
+/* ✅ Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .nav .container {
+    flex-wrap: wrap; /* stack items if needed */
+    justify-content: space-between;
+    padding: 0 10px;
+    height: auto;
+  }
+
+  .nav-left {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-icons {
+    margin-left: auto; /* keep icons to the far right */
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -98,9 +197,9 @@ a:hover { opacity:.9 }
   justify-content: flex-start;
   padding: 40px 0;
   background:
-    radial-gradient(800px 500px at 85% -10%, rgba(204,139,30,.18), transparent 60%),
-    radial-gradient(900px 540px at 0% -15%, rgba(154,95,12,.15), transparent 60%),
-    linear-gradient(180deg,#fff,var(--gold-100));
+  radial-gradient(800px 500px at 85% -10%, rgba(204,139,30,0.08), transparent 70%),
+  radial-gradient(900px 540px at 0% -15%, rgba(154,95,12,0.08), transparent 70%),
+  linear-gradient(180deg, #fff, var(--gold-100));
 }
 .hero::before,
 .hero::after {
@@ -247,7 +346,39 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
 }
 
 /* ---------- Footer ---------- */
-.footer { border-top:1px solid #efeadf; background:#fff; padding:22px 0; font-size:14px; color:var(--muted) }
+.footer {
+  border-top: 1px solid #efeadf;
+  background: #fff;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.footer a {
+  color: #c49a6c;        /* temple brown */
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 8px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin: 0 6px;
+  color: #c49a6c;       /* temple brown */
+}
+
+.social-icons a:hover {
+  color: #a56a2c;       /* darker hover */
+}
+
 
 /* ---------- WhatsApp Floating Button ---------- */
 .whats-float {
