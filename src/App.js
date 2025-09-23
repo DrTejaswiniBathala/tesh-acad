@@ -230,7 +230,7 @@ export default function App() {
                   <li>PhD supervision matches</li>
                   <li>Grant budgets & workflows</li>
                   <li>Join as co-author in papers for IEEE and International Conferences</li>
-                  <li>Gain hands on skills in - Programming (Python, C++, Java) ; MATLAB/Simulink Simulations; Research Tools (LaTeX, Mendeley, Emndnote); Technical Writing and Documentation</li>
+                  <li>Gain hands on skills in - Programming (Python, C++, Java) ; MATLAB/Simulink Simulations; Research Tools (LaTeX, Mendeley, Endnote); Technical Writing and Documentation</li>
                   <li>One author from each group to present a paper on International Platform</li>
                 </ul>
               </div>
@@ -267,7 +267,7 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Discuss a Professional plan
+                Join our Exclusive Professional Network
               </a>
             </div>
           </div>
