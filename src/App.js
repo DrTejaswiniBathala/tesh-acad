@@ -1,3 +1,4 @@
+import React, { useRef, useState } from "react";
 import chalapathiImg from './leadership/chalapathi.jpg';
 import urmilaImg from './leadership/urmila.jpg';
 import tejaswiniImg from './leadership/tejaswini.jpg';
@@ -13,6 +14,22 @@ import teshadv from "./assets/TESH ADV.jpeg";
 import "./App.css";
 
 export default function App() {
+  // Scroll and Modal Logic
+  const scrollRef = useRef(null);
+  const [modalImg, setModalImg] = useState(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -350 : 350,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const openModal = (img) => setModalImg(img);
+  const closeModal = () => setModalImg(null);
+
   return (
     <div className="app">
   {/* Top Navigation */}
@@ -106,97 +123,71 @@ export default function App() {
         </div>
 
 
-{/* ========== GLOBAL OPPORTUNITIES SECTION (Auto-Scroll + Swipe) ========== */}
+{/* ========== GLOBAL OPPORTUNITIES SECTION (Professional Arrow + Zoom) ========== */}
 <section className="updates">
   <div className="container">
     <h2 className="section-title">Latest Global Opportunities</h2>
 
-    <div className="auto-scroll">
-      <div className="scroll-track">
-        <div className="utm-card">
-  <img src={utm} alt="UTM Research Assistant" />
-  <p className="caption">
-    Come with <strong>B.Tech CSE/IT</strong>, and learn:
-    <ul className="caption-list">
-      <li>Proficiency in mobile application development using Java, Flutter, and Firebase (cross-platform for Android/iOS).</li>
-      <li>Experience building web-based systems using PHP and MySQL.</li>
-      <li>Strong analytical and problem-solving skills – ability to interpret logic and implement it into code.</li>
-      <li>Familiarity with clinical data and ethical study protocols is an added advantage.</li>
-    </ul>
-    <span>
-      From <strong>TeSh Acad Professional Research Group</strong> — in just 20 hours, take the certificate and fly to <strong>Kuala Lumpur, Malaysia.</strong>
-    </span>
-  </p>
-</div>
+    <div className="carousel-wrapper">
+      <button className="arrow left" onClick={() => scroll("left")}>&#10094;</button>
 
-        <img src={cybercrime} alt="Cyber Crime Internship" />
-        <img src={raman} alt="Raman Charpak Fellowship" />
+      <div className="carousel-container" ref={scrollRef}>
+        <div className="utm-card" onClick={() => openModal(utm)}>
+          <img src={utm} alt="UTM Research Assistant" />
+          <p className="caption">
+            Come with <strong>B.Tech CSE/IT</strong>, and learn:
+            <ul className="caption-list">
+              <li>Proficiency in mobile app development using Java, Flutter, and Firebase.</li>
+              <li>Experience in web-based systems using PHP and MySQL.</li>
+              <li>Strong analytical and problem-solving skills.</li>
+              <li>Familiarity with clinical data and ethical studies.</li>
+            </ul>
+            <span>
+              From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
+            </span>
+          </p>
+        </div>
 
-        <div className="book-card">
-  <img src={book} alt="Book Chapter Call" />
-  <p className="caption">
-    Wonderful Opportunity for the Electrical Engineering Academicians in Book Chapter prep and publishing.<br />
-    <span>
-      For support, reach out <strong>TeSh Acad</strong> . From plagiarism-free manuscript prep to publication, all essential services are available.
-    </span>
-  </p>
-</div>
+        <div className="card" onClick={() => openModal(cybercrime)}>
+          <img src={cybercrime} alt="Cyber Crime Internship" />
+        </div>
 
-        <img src={teshadv} alt="TeSh Acad Career Advisory" />
+        <div className="card" onClick={() => openModal(raman)}>
+          <img src={raman} alt="Raman Charpak Fellowship" />
+        </div>
 
-        <div className="utem-card">
-  <img src={utem} alt="UTeM Faculty Vacancy" />
-  <p className="caption">
-    Try to build the resume to become eligible for such opportunities through
-    <strong> TeSh Academic Advancement Plans!</strong><br />
-    <span>Sooner the decision, sooner the betterment!</span>
-  </p>
-</div>
+        <div className="book-card" onClick={() => openModal(book)}>
+          <img src={book} alt="Book Chapter Call" />
+          <p className="caption">
+            Wonderful Opportunity for Electrical Engineering Academicians in Book Chapter preparation and publishing.<br />
+            <span>
+              For support, reach out to <strong>TeSh Acad</strong> — from plagiarism-free manuscript prep to publication, all essential services are available.
+            </span>
+          </p>
+        </div>
 
+        <div className="utem-card" onClick={() => openModal(utem)}>
+          <img src={utem} alt="UTeM Faculty Vacancy" />
+          <p className="caption">
+            Try to build your resume to become eligible for such opportunities through
+            <strong> TeSh Academic Advancement Plans!</strong><br />
+            <span>Sooner the decision, sooner the betterment!</span>
+          </p>
+        </div>
 
-        {/* Duplicate set for seamless infinite loop */}
-        <div className="utm-card">
-  <img src={utm} alt="UTM Research Assistant" />
-  <p className="caption">
-    Come with <strong>B.Tech CSE/IT</strong>, and learn:
-    <ul className="caption-list">
-      <li>Proficiency in mobile application development using Java, Flutter, and Firebase (cross-platform for Android/iOS).</li>
-      <li>Experience building web-based systems using PHP and MySQL.</li>
-      <li>Strong analytical and problem-solving skills – ability to interpret logic and implement it into code.</li>
-      <li>Familiarity with clinical data and ethical study protocols is an added advantage.</li>
-    </ul>
-    <span>
-      From <strong>TeSh Acad Professional Research Group</strong> — in just 20 hours, take the certificate and fly to <strong>Kuala Lumpur, Malaysia.</strong>
-    </span>
-  </p>
-</div>
-
-        <img src={cybercrime} alt="Cyber Crime Internship" />
-        <img src={raman} alt="Raman Charpak Fellowship" />
-
-        <div className="book-card">
-  <img src={book} alt="Book Chapter Call" />
-  <p className="caption">
-    Wonderful Opportunity for the Electrical Engineering Academicians in Book Chapter prep and publishing.<br />
-    <span>
-      For support, reach out <strong>TeSh Acad</strong> . From plagiarism-free manuscript prep to publication, all essential services are available.
-    </span>
-  </p>
-</div>
-
-        <img src={teshadv} alt="TeSh Acad Career Advisory" />
-
-        <div className="utem-card">
-  <img src={utem} alt="UTeM Faculty Vacancy" />
-  <p className="caption">
-    Try to build the resume to become eligible for such opportunities through
-    <strong> TeSh Academic Advancement Plans!</strong><br />
-    <span>Sooner the decision, sooner the betterment!</span>
-  </p>
-</div>
-
+        <div className="card" onClick={() => openModal(teshadv)}>
+          <img src={teshadv} alt="TeSh Acad Career Advisory" />
+        </div>
       </div>
+
+      <button className="arrow right" onClick={() => scroll("right")}>&#10095;</button>
     </div>
+
+    {modalImg && (
+      <div className="modal" onClick={closeModal}>
+        <img src={modalImg} alt="Enlarged" className="modal-img" />
+      </div>
+    )}
   </div>
 </section>
 

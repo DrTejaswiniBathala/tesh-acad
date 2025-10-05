@@ -474,98 +474,32 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
 }
 
 
-/* Continuous look - same as Leadership */
+/* ======= GLOBAL OPPORTUNITIES (AUTO SCROLL + CLEAN BACKGROUND) ======= */
 .updates {
+  background: #f0e7da; /* warm beige Tesh tone */
   padding: 60px 0;
-  background: #fffaf3;
   text-align: center;
 }
 
-.section-title {
-  font-size: 26px;
-  color: #a56a2c;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-/* Auto-scroll base */
-.auto-scroll {
-  width: 100%;
-  overflow-x: auto;        /* enables finger swipe on mobile */
-  overflow-y: hidden;
+.carousel-wrapper {
   position: relative;
-  -webkit-overflow-scrolling: touch; /* smooth native swipe */
-  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.scroll-track {
+.carousel-container {
   display: flex;
   gap: 32px;
-  animation: scroll-left 35s linear infinite;
-  align-items: flex-start;  /* ✅ ensures text below image aligns neatly */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding: 20px;
+  animation: scrollLeft 45s linear infinite; /* ✅ auto-scroll animation */
 }
 
-/* Posters */
-.scroll-track img {
-  width: 300px;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-shrink: 0;
-}
-
-.scroll-track img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-}
-
-/* ========== BOOK CHAPTER CARD WITH CAPTION ========== */
-.book-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  flex-shrink: 0;
-}
-
-.book-card img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.book-card img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-}
-
-.caption {
-  font-size: 13px;
-  color: #5c4a2f;
-  font-weight: 500;
-  line-height: 1.4;
-  margin-top: 8px;
-  text-align: center;
-  padding: 0 6px;
-}
-
-.caption span {
-  display: block;
-  font-size: 12px;
-  color: #7b5c38;
-  margin-top: 4px;
-}
-
-.caption strong {
-  color: #a56a2c;
-  font-weight: 600;
-}
-
-/* Smooth infinite scroll animation */
-@keyframes scroll-left {
+/* Auto-scroll animation keyframes */
+@keyframes scrollLeft {
   0% {
     transform: translateX(0);
   }
@@ -574,94 +508,120 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
   }
 }
 
-/* Pause auto-scroll when user hovers or swipes */
-.auto-scroll:hover .scroll-track,
-.auto-scroll:active .scroll-track {
-  animation-play-state: paused;
-}
-
-
-/* ========== UTEM CARD WITH CAPTION ========== */
+/* Cards */
+.card,
+.utm-card,
+.book-card,
 .utem-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
   flex-shrink: 0;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Remove white borders — clean transparent look */
+.card img,
+.utm-card img,
+.book-card img,
 .utem-card img {
   width: 100%;
+  height: auto;
   border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background: transparent;
 }
 
-.utem-card img:hover {
+/* Hover zoom */
+.card:hover,
+.utm-card:hover,
+.book-card:hover,
+.utem-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-
-/* ========== UTM CARD WITH CAPTION ========== */
-.utm-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  flex-shrink: 0;
+/* Captions */
+.caption {
+  font-size: 13px;
+  color: #5c4a2f;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 8px;
+  padding: 0 6px;
 }
-
-.utm-card img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.caption strong {
+  color: #a56a2c;
 }
-
-.utm-card img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-}
-
-/* Caption list styling for bullet points */
 .caption-list {
   text-align: left;
   margin: 8px 0;
   padding-left: 20px;
   font-size: 12.5px;
-  color: #5c4a2f;
   line-height: 1.4;
 }
 
-.caption-list li {
-  margin-bottom: 6px;
+/* Arrow Buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(165, 106, 44, 0.8);
+  color: #e3e1e1;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background 0.3s ease;
+  z-index: 5;
+}
+.arrow:hover {
+  background: #7b4e1a;
+}
+.arrow.left {
+  left: 0;
+}
+.arrow.right {
+  right: 0;
 }
 
-/* ===== MOBILE OPTIMIZATION ===== */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 22px;
-    margin-bottom: 28px;
-  }
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
 
-  .scroll-track {
-    animation: none; /* stop auto scroll on mobile to favor swipe */
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-container {
+    animation: none; /* ✅ stop auto-scroll on mobile, allow swipe */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 20px;
   }
-
-  .scroll-track img,
-  .book-card {
-    width: 90vw;        /* fills most of screen */
+  .card,
+  .utm-card,
+  .book-card,
+  .utem-card {
+    width: 85vw;
     max-width: 380px;
-    border-radius: 12px;
+    scroll-snap-align: center;
   }
-
+  .arrow {
+    display: none;
+  }
   .caption {
     font-size: 12px;
-    line-height: 1.3;
-    padding: 0 10px;
   }
 }
-
-
