@@ -3,6 +3,13 @@ import urmilaImg from './leadership/urmila.jpg';
 import tejaswiniImg from './leadership/tejaswini.jpg';
 import shravyaImg from './leadership/shravya.jpg';
 
+import utem from "./assets/UTEM.jpeg";
+import utm from "./assets/UTM.jpeg";
+import cybercrime from "./assets/CYBER CRIME.jpeg";
+import raman from "./assets/RAMAN CHARPAK FELLOWSHIP.jpeg";
+import book from "./assets/CALL FOR BOOK CHAPTERS.jpeg";
+import teshadv from "./assets/TESH ADV.jpeg";
+
 import "./App.css";
 
 export default function App() {
@@ -97,6 +104,103 @@ export default function App() {
           <p>GSTIN - 37AQZPB1669H1ZC</p>
           <p>UDYAM-AP-07-0096832</p>
         </div>
+
+
+{/* ========== GLOBAL OPPORTUNITIES SECTION (Auto-Scroll + Swipe) ========== */}
+<section className="updates">
+  <div className="container">
+    <h2 className="section-title">Latest Global Opportunities</h2>
+
+    <div className="auto-scroll">
+      <div className="scroll-track">
+        <div className="utm-card">
+  <img src={utm} alt="UTM Research Assistant" />
+  <p className="caption">
+    Come with <strong>B.Tech CSE/IT</strong>, and learn:
+    <ul className="caption-list">
+      <li>Proficiency in mobile application development using Java, Flutter, and Firebase (cross-platform for Android/iOS).</li>
+      <li>Experience building web-based systems using PHP and MySQL.</li>
+      <li>Strong analytical and problem-solving skills – ability to interpret logic and implement it into code.</li>
+      <li>Familiarity with clinical data and ethical study protocols is an added advantage.</li>
+    </ul>
+    <span>
+      From <strong>TeSh Acad Professional Research Group</strong> — in just 20 hours, take the certificate and fly to <strong>Kuala Lumpur, Malaysia.</strong>
+    </span>
+  </p>
+</div>
+
+        <img src={cybercrime} alt="Cyber Crime Internship" />
+        <img src={raman} alt="Raman Charpak Fellowship" />
+
+        <div className="book-card">
+  <img src={book} alt="Book Chapter Call" />
+  <p className="caption">
+    Wonderful Opportunity for the Electrical Engineering Academicians in Book Chapter prep and publishing.<br />
+    <span>
+      For support, reach out <strong>TeSh Acad</strong> . From plagiarism-free manuscript prep to publication, all essential services are available.
+    </span>
+  </p>
+</div>
+
+        <img src={teshadv} alt="TeSh Acad Career Advisory" />
+
+        <div className="utem-card">
+  <img src={utem} alt="UTeM Faculty Vacancy" />
+  <p className="caption">
+    Try to build the resume to become eligible for such opportunities through
+    <strong> TeSh Academic Advancement Plans!</strong><br />
+    <span>Sooner the decision, sooner the betterment!</span>
+  </p>
+</div>
+
+
+        {/* Duplicate set for seamless infinite loop */}
+        <div className="utm-card">
+  <img src={utm} alt="UTM Research Assistant" />
+  <p className="caption">
+    Come with <strong>B.Tech CSE/IT</strong>, and learn:
+    <ul className="caption-list">
+      <li>Proficiency in mobile application development using Java, Flutter, and Firebase (cross-platform for Android/iOS).</li>
+      <li>Experience building web-based systems using PHP and MySQL.</li>
+      <li>Strong analytical and problem-solving skills – ability to interpret logic and implement it into code.</li>
+      <li>Familiarity with clinical data and ethical study protocols is an added advantage.</li>
+    </ul>
+    <span>
+      From <strong>TeSh Acad Professional Research Group</strong> — in just 20 hours, take the certificate and fly to <strong>Kuala Lumpur, Malaysia.</strong>
+    </span>
+  </p>
+</div>
+
+        <img src={cybercrime} alt="Cyber Crime Internship" />
+        <img src={raman} alt="Raman Charpak Fellowship" />
+
+        <div className="book-card">
+  <img src={book} alt="Book Chapter Call" />
+  <p className="caption">
+    Wonderful Opportunity for the Electrical Engineering Academicians in Book Chapter prep and publishing.<br />
+    <span>
+      For support, reach out <strong>TeSh Acad</strong> . From plagiarism-free manuscript prep to publication, all essential services are available.
+    </span>
+  </p>
+</div>
+
+        <img src={teshadv} alt="TeSh Acad Career Advisory" />
+
+        <div className="utem-card">
+  <img src={utem} alt="UTeM Faculty Vacancy" />
+  <p className="caption">
+    Try to build the resume to become eligible for such opportunities through
+    <strong> TeSh Academic Advancement Plans!</strong><br />
+    <span>Sooner the decision, sooner the betterment!</span>
+  </p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
         {/* ================== Focus Snapshot ================== */}
         <section className="section alt">
