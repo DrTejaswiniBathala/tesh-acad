@@ -148,13 +148,40 @@ export default function App() {
           </p>
         </div>
 
-        <div className="card" onClick={() => openModal(cybercrime)}>
-          <img src={cybercrime} alt="Cyber Crime Internship" />
-        </div>
+       <div className="card" onClick={() => openModal(cybercrime)}>
+  <img src={cybercrime} alt="Cyber Crime Internship" />
+  <p className="caption">
+    Inviting <strong>UG, PG, and PhD students</strong> to apply for the 
+    <strong> Internship Program at the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs, Government of India</strong>.
+    <ul className="caption-list">
+      <li>Gain valuable experience in Cyber Security and Digital Forensics.</li>
+      <li>Develop practical skills in Cyber Crime Investigation and contribute to national security.</li>
+      <li>Work alongside experts to enhance your knowledge and boost your resume.</li>
+    </ul>
+    <span>
+      Visit <a href="https://www.i4c.mha.gov.in" target="_blank" rel="noopener noreferrer">www.i4c.mha.gov.in</a> 
+      for eligibility and application details. <br />
+      <strong>Last Date to Apply:</strong> 17 October 2025, 05:30 PM
+    </span>
+  </p>
+</div>
+
 
         <div className="card" onClick={() => openModal(raman)}>
-          <img src={raman} alt="Raman Charpak Fellowship" />
-        </div>
+  <img src={raman} alt="Raman Charpak Fellowship" />
+  <p className="caption">
+    Come with <strong>B.Tech CSE/IT</strong>, and learn:
+    <ul className="caption-list">
+      <li>An exceptional opportunity for PhD and Master's students from India and France to undertake collaborative research in reputed institutions.</li>
+      <li>The fellowship promotes scientific exchange between both countries across domains like Engineering, Physical, Chemical, Biological, and Environmental Sciences.</li>
+      <li>Selected candidates receive funding support, travel assistance, and accommodation, with fellowship tenures ranging from 2 to 5 months.</li>
+    </ul>
+    <span>
+      From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
+    </span>
+  </p>
+</div>
+
 
         <div className="book-card" onClick={() => openModal(book)}>
           <img src={book} alt="Book Chapter Call" />
@@ -175,23 +202,36 @@ export default function App() {
           </p>
         </div>
 
+      {/* ----- TeSh Acad Career Advisory ----- */}
         <div className="card" onClick={() => openModal(teshadv)}>
           <img src={teshadv} alt="TeSh Acad Career Advisory" />
+          <div className="caption">
+            Discover how <strong>TeSh Acad Career Advisory</strong> helps students move from 
+            <em> confusion to clarity </em> and from <em> chance to choice </em>.
+            <ul className="caption-list">
+              <li>Only 1 in 10 students in India receives proper career counselling.</li>
+              <li>Our expert mentors guide students to make informed academic and career decisions.</li>
+              <li>We help align every learner’s talent with the right career path for long-term satisfaction and growth.</li>
+            </ul>
+            <span>
+              Contact us at <strong>connect@teshacad.org</strong> or visit 
+              <a href="https://www.teshacad.org" target="_blank" rel="noopener noreferrer"> www.teshacad.org</a> 
+              to book your personalized counselling session.
+            </span>
+          </div>
         </div>
-      </div>
+      </div> {/* <-- closes carousel-container */}
 
       <button className="arrow right" onClick={() => scroll("right")}>&#10095;</button>
-    </div>
+    </div> {/* <-- closes carousel-wrapper */}
 
     {modalImg && (
       <div className="modal" onClick={closeModal}>
         <img src={modalImg} alt="Enlarged" className="modal-img" />
       </div>
     )}
-  </div>
-</section>
-
-
+  </div> {/* <-- closes container */}
+</section> {/* <-- closes updates section */}
 
         {/* ================== Focus Snapshot ================== */}
         <section className="section alt">

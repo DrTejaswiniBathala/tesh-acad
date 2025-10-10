@@ -476,7 +476,7 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
 
 /* ======= GLOBAL OPPORTUNITIES (AUTO SCROLL + CLEAN BACKGROUND) ======= */
 .updates {
-  background: #f0e7da; /* warm beige Tesh tone */
+  background: #e9e6e1; /* warm beige Tesh tone */
   padding: 60px 0;
   text-align: center;
 }
@@ -624,4 +624,38 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
   .caption {
     font-size: 12px;
   }
+}
+
+
+/* Ensure all cards have a unified background tone */
+.card,
+.utm-card,
+.utem-card,
+.book-card {
+  background: #fffaf3; /* matches your beige theme */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Keep images clean and aligned */
+.card img,
+.utm-card img,
+.utem-card img,
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fffaf3; /* same beige */
+  object-fit: contain;
+}
+
+/* Optional: Hover enhancement */
+.card:hover,
+.utm-card:hover,
+.utem-card:hover,
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
