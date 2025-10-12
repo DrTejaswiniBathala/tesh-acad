@@ -123,115 +123,7 @@ export default function App() {
         </div>
 
 
-{/* ========== GLOBAL OPPORTUNITIES SECTION (Professional Arrow + Zoom) ========== */}
-<section className="updates">
-  <div className="container">
-    <h2 className="section-title">Latest Global Opportunities</h2>
 
-    <div className="carousel-wrapper">
-      <button className="arrow left" onClick={() => scroll("left")}>&#10094;</button>
-
-      <div className="carousel-container" ref={scrollRef}>
-        <div className="utm-card" onClick={() => openModal(utm)}>
-          <img src={utm} alt="UTM Research Assistant" />
-          <p className="caption">
-            Come with <strong>B.Tech CSE/IT</strong>, and learn:
-            <ul className="caption-list">
-              <li>Proficiency in mobile app development using Java, Flutter, and Firebase.</li>
-              <li>Experience in web-based systems using PHP and MySQL.</li>
-              <li>Strong analytical and problem-solving skills.</li>
-              <li>Familiarity with clinical data and ethical studies.</li>
-            </ul>
-            <span>
-              From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
-            </span>
-          </p>
-        </div>
-
-       <div className="card" onClick={() => openModal(cybercrime)}>
-  <img src={cybercrime} alt="Cyber Crime Internship" />
-  <p className="caption">
-    Inviting <strong>UG, PG, and PhD students</strong> to apply for the 
-    <strong> Internship Program at the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs, Government of India</strong>.
-    <ul className="caption-list">
-      <li>Gain valuable experience in Cyber Security and Digital Forensics.</li>
-      <li>Develop practical skills in Cyber Crime Investigation and contribute to national security.</li>
-      <li>Work alongside experts to enhance your knowledge and boost your resume.</li>
-    </ul>
-    <span>
-      Visit <a href="https://www.i4c.mha.gov.in" target="_blank" rel="noopener noreferrer">www.i4c.mha.gov.in</a> 
-      for eligibility and application details. <br />
-      <strong>Last Date to Apply:</strong> 17 October 2025, 05:30 PM
-    </span>
-  </p>
-</div>
-
-
-        <div className="card" onClick={() => openModal(raman)}>
-  <img src={raman} alt="Raman Charpak Fellowship" />
-  <p className="caption">
-    Come with <strong>B.Tech CSE/IT</strong>, and learn:
-    <ul className="caption-list">
-      <li>An exceptional opportunity for PhD and Master's students from India and France to undertake collaborative research in reputed institutions.</li>
-      <li>The fellowship promotes scientific exchange between both countries across domains like Engineering, Physical, Chemical, Biological, and Environmental Sciences.</li>
-      <li>Selected candidates receive funding support, travel assistance, and accommodation, with fellowship tenures ranging from 2 to 5 months.</li>
-    </ul>
-    <span>
-      From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
-    </span>
-  </p>
-</div>
-
-
-        <div className="book-card" onClick={() => openModal(book)}>
-          <img src={book} alt="Book Chapter Call" />
-          <p className="caption">
-            Wonderful Opportunity for Electrical Engineering Academicians in Book Chapter preparation and publishing.<br />
-            <span>
-              For support, reach out to <strong>TeSh Acad</strong> — from plagiarism-free manuscript prep to publication, all essential services are available.
-            </span>
-          </p>
-        </div>
-
-        <div className="utem-card" onClick={() => openModal(utem)}>
-          <img src={utem} alt="UTeM Faculty Vacancy" />
-          <p className="caption">
-            Try to build your resume to become eligible for such opportunities through
-            <strong> TeSh Academic Advancement Plans!</strong><br />
-            <span>Sooner the decision, sooner the betterment!</span>
-          </p>
-        </div>
-
-      {/* ----- TeSh Acad Career Advisory ----- */}
-        <div className="card" onClick={() => openModal(teshadv)}>
-          <img src={teshadv} alt="TeSh Acad Career Advisory" />
-          <div className="caption">
-            Discover how <strong>TeSh Acad Career Advisory</strong> helps students move from 
-            <em> confusion to clarity </em> and from <em> chance to choice </em>.
-            <ul className="caption-list">
-              <li>Only 1 in 10 students in India receives proper career counselling.</li>
-              <li>Our expert mentors guide students to make informed academic and career decisions.</li>
-              <li>We help align every learner’s talent with the right career path for long-term satisfaction and growth.</li>
-            </ul>
-            <span>
-              Contact us at <strong>connect@teshacad.org</strong> or visit 
-              <a href="https://www.teshacad.org" target="_blank" rel="noopener noreferrer"> www.teshacad.org</a> 
-              to book your personalized counselling session.
-            </span>
-          </div>
-        </div>
-      </div> {/* <-- closes carousel-container */}
-
-      <button className="arrow right" onClick={() => scroll("right")}>&#10095;</button>
-    </div> {/* <-- closes carousel-wrapper */}
-
-    {modalImg && (
-      <div className="modal" onClick={closeModal}>
-        <img src={modalImg} alt="Enlarged" className="modal-img" />
-      </div>
-    )}
-  </div> {/* <-- closes container */}
-</section> {/* <-- closes updates section */}
 
         {/* ================== Focus Snapshot ================== */}
         <section className="section alt">
@@ -523,7 +415,7 @@ export default function App() {
                 <h3>Dr. Urmila Bandaru</h3>
                 <p><strong>Founder & CEO</strong></p>
                 <p>PhD in Electrical Engineering | Professor & Research Collaborator</p>
-                <p>Guiding TeSh Acad in academics, MOUs, and global education pathways.</p>
+                <p>Leading TeSh Acad’s global vision and multi-domain consultancy across Education, Research & Management building Strategic Alliances, MOUs, and Global Academic Pathways.</p>
                 <a 
                   href="https://www.linkedin.com/in/dr-urmila-bandaru-159a9040/" 
                   target="_blank" 
@@ -540,7 +432,7 @@ export default function App() {
                 <h3>B Venkata Chalapathi</h3>
                 <p><strong>Executive Advisor </strong></p>
                 <p>Industry Professional | Mechanical Engineer </p>
-                <p>Advising with global strategy and collaborations.</p>
+                <p>Advising with Global Strategy and Collaborations.</p>
                 <a 
                   href="https://www.linkedin.com/in/bathala-venkata-chalapathi-196243213/" 
                   target="_blank" 
@@ -557,7 +449,7 @@ export default function App() {
                 <h3>Dr. Tejaswini Bathala</h3>
                 <p><strong>CTO</strong></p>
                 <p>MBA | Doctor of Pharmacy | Modern Vedic Astrologist</p>
-                <p>Leading strategy, innovation, and global partnerships at TeSh Acad.</p>
+                <p>Leading Strategic Innovation, Global Branding, Digital Transformation, Revenue Intelligence, Recruitment, and Technology-led Excellence at TeSh Acad.</p>
                 <a 
                   href="https://www.linkedin.com/in/dr-tejaswini-bathala-66437b154/" 
                   target="_blank" 
@@ -574,7 +466,7 @@ export default function App() {
                 <h3>Miss Gorgeous Shravya Vani </h3>
                 <p><strong>Managing Director</strong></p>
                 <p>MA International Events Management | Computer Science Engineer </p>
-                <p>Driving organizational growth, creativity, and partnerships globally.</p>
+                <p>Driving Events, Career Fests, MoUs, Student Engagement Programs, Global Meets, Partnerships, Branding & Communications globally.</p>
                 <a 
                   href="https://www.linkedin.com/in/shravya-vani-b-b38946201/" 
                   target="_blank" 
@@ -616,10 +508,123 @@ export default function App() {
           </h2>
         </section>
 
+
+{/* ========== GLOBAL OPPORTUNITIES SECTION (Professional Arrow + Zoom) ========== */}
+<section className="updates">
+  <div className="container">
+    <h2 className="section-title">Careers</h2>
+
+    <div className="carousel-wrapper">
+      <button className="arrow left" onClick={() => scroll("left")}>&#10094;</button>
+
+      <div className="carousel-container" ref={scrollRef}>
+        <div className="utm-card" onClick={() => openModal(utm)}>
+          <img src={utm} alt="UTM Research Assistant" />
+          <p className="caption">
+            Come with <strong>B.Tech CSE/IT</strong>, and learn:
+            <ul className="caption-list">
+              <li>Proficiency in mobile app development using Java, Flutter, and Firebase.</li>
+              <li>Experience in web-based systems using PHP and MySQL.</li>
+              <li>Strong analytical and problem-solving skills.</li>
+              <li>Familiarity with clinical data and ethical studies.</li>
+            </ul>
+            <span>
+              From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
+            </span>
+          </p>
+        </div>
+
+       <div className="card" onClick={() => openModal(cybercrime)}>
+  <img src={cybercrime} alt="Cyber Crime Internship" />
+  <p className="caption">
+    Inviting <strong>UG, PG, and PhD students</strong> to apply for the 
+    <strong> Internship Program at the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs, Government of India</strong>.
+    <ul className="caption-list">
+      <li>Gain valuable experience in Cyber Security and Digital Forensics.</li>
+      <li>Develop practical skills in Cyber Crime Investigation and contribute to national security.</li>
+      <li>Work alongside experts to enhance your knowledge and boost your resume.</li>
+    </ul>
+    <span>
+      Visit <a href="https://www.i4c.mha.gov.in" target="_blank" rel="noopener noreferrer">www.i4c.mha.gov.in</a> 
+      for eligibility and application details. <br />
+      <strong>Last Date to Apply:</strong> 17 October 2025, 05:30 PM
+    </span>
+  </p>
+</div>
+
+
+        <div className="card" onClick={() => openModal(raman)}>
+  <img src={raman} alt="Raman Charpak Fellowship" />
+  <p className="caption">
+    Come with <strong>B.Tech CSE/IT</strong>, and learn:
+    <ul className="caption-list">
+      <li>An exceptional opportunity for PhD and Master's students from India and France to undertake collaborative research in reputed institutions.</li>
+      <li>The fellowship promotes scientific exchange between both countries across domains like Engineering, Physical, Chemical, Biological, and Environmental Sciences.</li>
+      <li>Selected candidates receive funding support, travel assistance, and accommodation, with fellowship tenures ranging from 2 to 5 months.</li>
+    </ul>
+    <span>
+      From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
+    </span>
+  </p>
+</div>
+
+
+        <div className="book-card" onClick={() => openModal(book)}>
+          <img src={book} alt="Book Chapter Call" />
+          <p className="caption">
+            Wonderful Opportunity for Electrical Engineering Academicians in Book Chapter preparation and publishing.<br />
+            <span>
+              For support, reach out to <strong>TeSh Acad</strong> — from plagiarism-free manuscript prep to publication, all essential services are available.
+            </span>
+          </p>
+        </div>
+
+        <div className="utem-card" onClick={() => openModal(utem)}>
+          <img src={utem} alt="UTeM Faculty Vacancy" />
+          <p className="caption">
+            Try to build your resume to become eligible for such opportunities through
+            <strong> TeSh Academic Advancement Plans!</strong><br />
+            <span>Sooner the decision, sooner the betterment!</span>
+          </p>
+        </div>
+
+      {/* ----- TeSh Acad Career Advisory ----- */}
+        <div className="card" onClick={() => openModal(teshadv)}>
+          <img src={teshadv} alt="TeSh Acad Career Advisory" />
+          <div className="caption">
+            Discover how <strong>TeSh Acad Career Advisory</strong> helps students move from 
+            <em> confusion to clarity </em> and from <em> chance to choice </em>.
+            <ul className="caption-list">
+              <li>Only 1 in 10 students in India receives proper career counselling.</li>
+              <li>Our expert mentors guide students to make informed academic and career decisions.</li>
+              <li>We help align every learner’s talent with the right career path for long-term satisfaction and growth.</li>
+            </ul>
+            <span>
+              Contact us at <strong>connect@teshacad.org</strong> or visit 
+              <a href="https://www.teshacad.org" target="_blank" rel="noopener noreferrer"> www.teshacad.org</a> 
+              to book your personalized counselling session.
+            </span>
+          </div>
+        </div>
+      </div> {/* <-- closes carousel-container */}
+
+      <button className="arrow right" onClick={() => scroll("right")}>&#10095;</button>
+    </div> {/* <-- closes carousel-wrapper */}
+
+    {modalImg && (
+      <div className="modal" onClick={closeModal}>
+        <img src={modalImg} alt="Enlarged" className="modal-img" />
+      </div>
+    )}
+  </div> {/* <-- closes container */}
+</section> {/* <-- closes updates section */}
+
+
+
         {/* ================== Contact ================== */}
         <section id="contact" className="section">
           <div className="container narrow contact">
-            <h2>Contact</h2>
+            <h2>Let our team reach out to you</h2>
             <p>Tell us your goal. We’ll reply within 24 hours.</p>
 
             <form
