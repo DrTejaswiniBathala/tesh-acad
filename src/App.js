@@ -30,61 +30,70 @@ export default function App() {
   const openModal = (img) => setModalImg(img);
   const closeModal = () => setModalImg(null);
 
-  return (
-    <div className="app">
-  {/* Top Navigation */}
-  <header className="nav">
-    <div className="container">
-      <nav className="nav-left">
-        <a href="#students">Students</a>
-        <a href="#Professionls">Professionals</a>
-        <a href="#institutes">Institutes</a>
-        <a href="#industry">Industry</a>
-        <a href="#team">Leadership</a>
-        <a href="#about">About</a>
-        <a className="btn" href="#contact">Contact</a>
-      </nav>
+ return (
+  <div className="app">
+    {/* ---------- Top Navigation ---------- */}
+    <header className="nav">
+      <div className="container">
+        {/* ---------- Left Navigation Links ---------- */}
+        <nav className="nav-left">
+          <a href="#students">Students</a>
+          <a href="#professionals">Professionals</a>
+          <a href="#institutes">Institutes</a>
+          <a href="#industry">Industry</a>
+          <a href="#team">Leadership</a>
+          <a href="#about">About</a>
+          <a className="btn" href="#contact">Contact</a>
+        </nav>
 
-      {/* Social + Email Icons – aligned right */}
-      <div className="nav-icons">
-        {/* Emails with envelope + text */}
-  <a
-    href="mailto:connect@teshacad.org?subject=Enquiry from TESH ACAD Website&body=Hello TESH ACAD Team,"
-    className="email-link"
-    aria-label="Email connect@teshacad.org"
-  >
-    <i className="fas fa-envelope"></i> connect@teshacad.org
-  </a>
+        {/* ---------- Right Side Emails + Social Icons ---------- */}
+        <div className="nav-icons">
+          {/* Email Row */}
+          <div className="email-row">
+            <a
+              href="mailto:connect@teshacad.org?subject=Enquiry from TESH ACAD Website&body=Hello TESH ACAD Team,"
+              className="email-link"
+              aria-label="Email connect@teshacad.org"
+            >
+              <i className="fas fa-envelope"></i> connect@teshacad.org
+            </a>
 
-  <a
-    href="mailto:urmila.ceo@teshacad.org?subject=Message for Dr. Urmila&body=Dear Dr. Urmila,"
-    className="email-link"
-    aria-label="Email urmila.ceo@teshacad.org"
-  >
-    <i className="fas fa-envelope"></i> urmila.ceo@teshacad.org
-  </a>
+            <a
+              href="mailto:urmila.ceo@teshacad.org?subject=Message for Dr. Urmila&body=Dear Dr. Urmila,"
+              className="email-link"
+              aria-label="Email urmila.ceo@teshacad.org"
+            >
+              <i className="fas fa-envelope"></i> urmila.ceo@teshacad.org
+            </a>
+          </div>
 
-        {/* Social Icons */}
-        <a
-          href="https://www.instagram.com/tesh_acad/?hl=en"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Instagram"
-        >
-          <i className="fab fa-instagram"></i>
-        </a>
+          {/* Social Icons Row */}
+          <div className="social-row">
+            <a
+              href="https://www.instagram.com/tesh_acad/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-link"
+              aria-label="Instagram"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
 
-        <a
-          href="https://www.linkedin.com/company/tesh-acad-international-consultants"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="LinkedIn"
-        >
-          <i className="fab fa-linkedin"></i>
-        </a>
+            <a
+              href="https://www.linkedin.com/company/tesh-acad-international-consultants"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-link"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+
+
 
 
       {/* ================== MAIN CONTENT ================== */}
@@ -509,115 +518,87 @@ export default function App() {
         </section>
 
 
-{/* ========== GLOBAL OPPORTUNITIES SECTION (Professional Arrow + Zoom) ========== */}
-<section className="updates">
+{/* ========== CAREERS SECTION (Auto-scroll + Zoom Modal) ========== */}
+<section id="careers" className="updates">
   <div className="container">
     <h2 className="section-title">Careers</h2>
 
     <div className="carousel-wrapper">
-      <button className="arrow left" onClick={() => scroll("left")}>&#10094;</button>
+      <div className="carousel-container auto-scroll">
 
-      <div className="carousel-container" ref={scrollRef}>
+        {/* 1️⃣ UTM Internship */}
         <div className="utm-card" onClick={() => openModal(utm)}>
           <img src={utm} alt="UTM Research Assistant" />
           <p className="caption">
             Come with <strong>B.Tech CSE/IT</strong>, and learn:
             <ul className="caption-list">
-              <li>Proficiency in mobile app development using Java, Flutter, and Firebase.</li>
-              <li>Experience in web-based systems using PHP and MySQL.</li>
+              <li>Mobile app development using Java, Flutter, and Firebase.</li>
+              <li>Experience in web systems using PHP and MySQL.</li>
               <li>Strong analytical and problem-solving skills.</li>
-              <li>Familiarity with clinical data and ethical studies.</li>
             </ul>
-            <span>
-              From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
-            </span>
+            <span>From <strong>TeSh Acad Research Group</strong> — earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.</span>
           </p>
         </div>
 
-       <div className="card" onClick={() => openModal(cybercrime)}>
-  <img src={cybercrime} alt="Cyber Crime Internship" />
-  <p className="caption">
-    Inviting <strong>UG, PG, and PhD students</strong> to apply for the 
-    <strong> Internship Program at the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs, Government of India</strong>.
-    <ul className="caption-list">
-      <li>Gain valuable experience in Cyber Security and Digital Forensics.</li>
-      <li>Develop practical skills in Cyber Crime Investigation and contribute to national security.</li>
-      <li>Work alongside experts to enhance your knowledge and boost your resume.</li>
-    </ul>
-    <span>
-      Visit <a href="https://www.i4c.mha.gov.in" target="_blank" rel="noopener noreferrer">www.i4c.mha.gov.in</a> 
-      for eligibility and application details. <br />
-      <strong>Last Date to Apply:</strong> 17 October 2025, 05:30 PM
-    </span>
-  </p>
-</div>
+        {/* 2️⃣ Cybercrime Internship */}
+        <div className="card" onClick={() => openModal(cybercrime)}>
+          <img src={cybercrime} alt="Cyber Crime Internship" />
+          <p className="caption">
+            Internship at the <strong>Indian Cyber Crime Coordination Centre (I4C)</strong>, MHA.
+            <ul className="caption-list">
+              <li>Gain experience in Cyber Security & Forensics.</li>
+              <li>Work alongside experts to enhance your knowledge.</li>
+            </ul>
+            <span>Last Date to Apply: <strong>17 Oct 2025</strong></span>
+          </p>
+        </div>
 
-
+        {/* 3️⃣ Raman Charpak Fellowship */}
         <div className="card" onClick={() => openModal(raman)}>
-  <img src={raman} alt="Raman Charpak Fellowship" />
-  <p className="caption">
-    Come with <strong>B.Tech CSE/IT</strong>, and learn:
-    <ul className="caption-list">
-      <li>An exceptional opportunity for PhD and Master's students from India and France to undertake collaborative research in reputed institutions.</li>
-      <li>The fellowship promotes scientific exchange between both countries across domains like Engineering, Physical, Chemical, Biological, and Environmental Sciences.</li>
-      <li>Selected candidates receive funding support, travel assistance, and accommodation, with fellowship tenures ranging from 2 to 5 months.</li>
-    </ul>
-    <span>
-      From <strong>TeSh Acad Professional Research Group</strong> — in 20 hours, earn your certificate and fly to <strong>Kuala Lumpur, Malaysia</strong>.
-    </span>
-  </p>
-</div>
+          <img src={raman} alt="Raman Charpak Fellowship" />
+          <p className="caption">
+            Opportunity for <strong>PhD & Master’s students</strong> for Indo–French collaborative research.
+            <ul className="caption-list">
+              <li>Funding support & accommodation for 2–5 months.</li>
+            </ul>
+          </p>
+        </div>
 
-
+        {/* 4️⃣ Book Chapter */}
         <div className="book-card" onClick={() => openModal(book)}>
           <img src={book} alt="Book Chapter Call" />
           <p className="caption">
-            Wonderful Opportunity for Electrical Engineering Academicians in Book Chapter preparation and publishing.<br />
-            <span>
-              For support, reach out to <strong>TeSh Acad</strong> — from plagiarism-free manuscript prep to publication, all essential services are available.
-            </span>
+            Opportunity for Electrical Engineering Academicians — from manuscript prep to international publication.
           </p>
         </div>
 
+        {/* 5️⃣ UTeM Vacancy */}
         <div className="utem-card" onClick={() => openModal(utem)}>
           <img src={utem} alt="UTeM Faculty Vacancy" />
           <p className="caption">
-            Try to build your resume to become eligible for such opportunities through
-            <strong> TeSh Academic Advancement Plans!</strong><br />
-            <span>Sooner the decision, sooner the betterment!</span>
+            Apply for <strong>UTeM Faculty Positions</strong> — through <strong>TeSh Academic Advancement Plans</strong>.
           </p>
         </div>
 
-      {/* ----- TeSh Acad Career Advisory ----- */}
-        <div className="card" onClick={() => openModal(teshadv)}>
-          <img src={teshadv} alt="TeSh Acad Career Advisory" />
-          <div className="caption">
-            Discover how <strong>TeSh Acad Career Advisory</strong> helps students move from 
-            <em> confusion to clarity </em> and from <em> chance to choice </em>.
-            <ul className="caption-list">
-              <li>Only 1 in 10 students in India receives proper career counselling.</li>
-              <li>Our expert mentors guide students to make informed academic and career decisions.</li>
-              <li>We help align every learner’s talent with the right career path for long-term satisfaction and growth.</li>
-            </ul>
-            <span>
-              Contact us at <strong>connect@teshacad.org</strong> or visit 
-              <a href="https://www.teshacad.org" target="_blank" rel="noopener noreferrer"> www.teshacad.org</a> 
-              to book your personalized counselling session.
-            </span>
-          </div>
+        {/* Duplicates for infinite loop */}
+        <div className="utm-card" onClick={() => openModal(utm)}>
+          <img src={utm} alt="UTM Research Assistant" />
         </div>
-      </div> {/* <-- closes carousel-container */}
-
-      <button className="arrow right" onClick={() => scroll("right")}>&#10095;</button>
-    </div> {/* <-- closes carousel-wrapper */}
-
-    {modalImg && (
-      <div className="modal" onClick={closeModal}>
-        <img src={modalImg} alt="Enlarged" className="modal-img" />
+        <div className="card" onClick={() => openModal(cybercrime)}>
+          <img src={cybercrime} alt="Cyber Crime Internship" />
+        </div>
       </div>
-    )}
-  </div> {/* <-- closes container */}
-</section> {/* <-- closes updates section */}
+
+      {/* Modal */}
+      {modalImg && (
+        <div className="modal" onClick={closeModal}>
+          <img src={modalImg} alt="Enlarged" className="modal-img" />
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
 
 
 

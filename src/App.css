@@ -495,7 +495,7 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
   overflow-x: hidden;
   scroll-behavior: smooth;
   padding: 20px;
-  animation: scrollLeft 45s linear infinite; /* ✅ auto-scroll animation */
+  animation: none 45s linear infinite; /* ✅ auto-scroll animation */
 }
 
 /* Auto-scroll animation keyframes */
@@ -661,3 +661,427 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
 }
 
 
+/* === FIX FOR CAREERS CUT === */
+.career-carousel,
+.carousel-wrapper {
+  overflow: visible !important;   /* allow side posters to show fully */
+  width: 100%;
+}
+
+.carousel-container {
+  overflow-x: visible !important;  /* let the full image show */
+  justify-content: center;        /* center all cards */
+  gap: 28px;                      /* nice spacing */
+  flex-wrap: nowrap;
+}
+
+.carousel-container img {
+  max-width: 320px;
+  border-radius: 16px;
+}
+
+.section#careers {
+  width: 100%;
+  padding: 60px 0;
+}
+
+
+/* === Careers Section Text Enhancement === */
+#careers .caption,
+#careers p {
+  font-size: 16px !important;        /* increase size */
+  line-height: 1.8;                  /* better readability */
+  color: #4a3b1f;                    /* rich brown tone */
+  font-weight: 500;
+}
+
+#careers strong {
+  color: var(--gold-700);
+  font-weight: 600;
+}
+
+
+
+/* =========================================================
+   ROUNDED SECTION STYLING (Round-style layout for all pages)
+   ========================================================= */
+
+section,
+#about,
+.updates,
+.footer,
+.hero,
+.leadership-grid,
+.form,
+.person,
+.card,
+.contact-section {
+  border-radius: 36px;
+  margin: 40px auto;
+  padding: 60px 40px;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(91, 70, 20, 0.08);
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+/* Give alternating sections soft beige background for contrast */
+section:nth-of-type(2n) {
+  background: var(--gold-050);
+}
+
+/* Hero full width but still rounded container look */
+.hero {
+  border-radius: 0 0 60px 60px;
+  margin-bottom: 60px;
+  padding-top: 80px;
+  background: linear-gradient(180deg, #fff, var(--gold-100));
+  box-shadow: var(--shadow-md);
+}
+
+/* Smooth transition between rounded sections */
+section + section {
+  margin-top: 80px;
+}
+
+/* Responsive rounding tweaks */
+@media (max-width: 768px) {
+  section,
+  #about,
+  .updates,
+  .form {
+    border-radius: 24px;
+    padding: 40px 20px;
+    margin: 20px;
+  }
+
+  .hero {
+    border-radius: 0 0 40px 40px;
+  }
+}
+
+/* Optional hover lift for visual appeal */
+section:hover {
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+
+
+/* ======== CAREERS SECTION — Auto-scroll horizontally ======== */
+#careers {
+  background: #fffaf3;
+  border-radius: 36px;
+  padding: 60px 0;
+  box-shadow: var(--shadow-md);
+}
+
+#careers .carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#careers .carousel-container {
+  display: flex;
+  gap: 32px;
+  animation: scrollCareers 50s linear infinite;
+  padding: 20px;
+}
+
+@keyframes scrollCareers {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause scroll on hover */
+#careers .carousel-container:hover {
+  animation-play-state: paused;
+}
+
+/* Card styling */
+#careers .card,
+#careers .utm-card,
+#careers .book-card,
+#careers .utem-card {
+  flex-shrink: 0;
+  width: 300px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#careers img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+#careers .card:hover,
+#careers .utm-card:hover,
+#careers .book-card:hover,
+#careers .utem-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* Caption styling */
+#careers .caption {
+  font-size: 15px;
+  color: #4a3b1f;
+  line-height: 1.6;
+  padding: 10px;
+  text-align: left;
+}
+
+#careers .caption-list {
+  font-size: 13.5px;
+  margin: 8px 0;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #careers .carousel-container {
+    animation: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+  }
+
+  #careers .card,
+  #careers .utm-card,
+  #careers .book-card,
+  #careers .utem-card {
+    width: 85vw;
+    scroll-snap-align: center;
+  }
+}
+
+
+#careers {
+  display: none !important;
+}
+
+
+/* ---------- 📱 Optimized Mobile Layout for Full Fit ---------- */
+@media (max-width: 768px) {
+
+  /* Make nav container flexible and centered */
+  .nav .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* Navigation links (Students, Professionals, etc.) */
+  .nav-left {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Email + social icons layout */
+  .nav-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  /* Email row */
+  .nav-icons .email-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-icons .email-link {
+    font-size: 12px;
+    color: #c49a6c;
+    white-space: nowrap;
+  }
+
+  /* Social icons row */
+  .nav-icons .social-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-icons .icon-link {
+    font-size: 18px;
+    color: #c49a6c;
+    transition: color 0.2s ease;
+  }
+
+  .nav-icons .icon-link:hover {
+    color: #a56a2c;
+  }
+
+
+
+
+  /* ---------- ✉️ PERFECT ALIGNMENT FOR EMAIL + SOCIAL ICONS ---------- */
+.nav-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Email row styling */
+.email-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #c49a6c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.email-link i {
+  font-size: 15px;
+  color: #b47414;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.email-link:hover {
+  color: #a56a2c;
+  text-decoration: underline;
+}
+
+/* Social icons row */
+.social-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #c49a6c;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.icon-link i {
+  vertical-align: middle;
+}
+
+.icon-link:hover {
+  color: #a56a2c;
+}
+
+/* ---------- Mobile: center everything neatly ---------- */
+@media (max-width: 768px) {
+  .nav-icons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 6px;
+  }
+
+  .email-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .email-link {
+    font-size: 12px;
+  }
+
+  .social-row {
+    gap: 10px;
+  }
+
+  .icon-link {
+    font-size: 16px;
+  }
+}
+
+
+  /* Hero image and title fully visible */
+  .hero {
+    min-height: auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero-left {
+    flex: 0 0 auto;
+  }
+
+  .hero-logo {
+    width: 160px;
+    height: auto;
+  }
+
+  .hero-right h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .hero .sub {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* Ensure no horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  section, #about, .updates, .form {
+    margin: 16px;
+    padding: 30px 18px;
+    border-radius: 22px;
+  }
+}
