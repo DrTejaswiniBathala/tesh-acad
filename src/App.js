@@ -47,49 +47,55 @@ export default function App() {
         </nav>
 
         {/* ---------- Right Side Emails + Social Icons ---------- */}
-        <div className="nav-icons">
-          {/* Email Row */}
-          <div className="email-row">
-            <a
-              href="mailto:connect@teshacad.org?subject=Enquiry from TESH ACAD Website&body=Hello TESH ACAD Team,"
-              className="email-link"
-              aria-label="Email connect@teshacad.org"
-            >
-              <i className="fas fa-envelope"></i> connect@teshacad.org
-            </a>
+<div className="nav-icons">
 
-            <a
-              href="mailto:urmila.ceo@teshacad.org?subject=Message for Dr. Urmila&body=Dear Dr. Urmila,"
-              className="email-link"
-              aria-label="Email urmila.ceo@teshacad.org"
-            >
-              <i className="fas fa-envelope"></i> urmila.ceo@teshacad.org
-            </a>
-          </div>
+  {/* Email Row */}
+  <div className="email-row">
+    <a
+      href="mailto:connect@teshacad.org?subject=Enquiry from TESH ACAD Website&body=Hello TESH ACAD Team,"
+      className="email-link"
+      aria-label="Email connect@teshacad.org"
+    >
+      <i className="fa-solid fa-envelope"></i>
+      <span>connect@teshacad.org</span>
+    </a>
 
-          {/* Social Icons Row */}
-          <div className="social-row">
-            <a
-              href="https://www.instagram.com/tesh_acad/?hl=en"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-link"
-              aria-label="Instagram"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
+    {/* Divider for neat look */}
+    <span className="email-divider">|</span>
 
-            <a
-              href="https://www.linkedin.com/company/tesh-acad-international-consultants"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-link"
-              aria-label="LinkedIn"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
+    <a
+      href="mailto:urmila.ceo@teshacad.org?subject=Message for Dr. Urmila&body=Dear Dr. Urmila,"
+      className="email-link"
+      aria-label="Email urmila.ceo@teshacad.org"
+    >
+      <i className="fa-solid fa-envelope"></i>
+      <span>urmila.ceo@teshacad.org</span>
+    </a>
+  </div>
+
+  {/* Social Icons Row */}
+  <div className="social-row">
+    <a
+      href="https://www.instagram.com/tesh_acad/?hl=en"
+      target="_blank"
+      rel="noreferrer"
+      className="icon-link"
+      aria-label="Instagram"
+    >
+      <i className="fab fa-instagram"></i>
+    </a>
+
+    <a
+      href="https://www.linkedin.com/company/tesh-acad-international-consultants"
+      target="_blank"
+      rel="noreferrer"
+      className="icon-link"
+      aria-label="LinkedIn"
+    >
+      <i className="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
       </div>
     </header>
 

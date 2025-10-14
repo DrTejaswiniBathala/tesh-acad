@@ -55,6 +55,7 @@ a:hover { opacity:.9 }
 .center { text-align:center }
 .mt-3 { margin-top:.75rem }
 
+
 /* ---------- Navigation ---------- */
 .nav {
   position: sticky;
@@ -68,7 +69,7 @@ a:hover { opacity:.9 }
 .nav .container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* left = links, right = icons/emails */
+  justify-content: space-between;
   gap: 18px;
   height: 64px;
 }
@@ -85,31 +86,50 @@ a:hover { opacity:.9 }
   white-space: nowrap;
 }
 
-/* ---------- RIGHT SIDE ICONS & EMAILS ---------- */
+/* ---------- 📧 PERFECT UNIFORM ICON & EMAIL ALIGNMENT ---------- */
 .nav-icons {
   display: flex;
   align-items: center;
-  gap: 16px; /* space between each item */
+  justify-content: flex-end;
+  gap: 22px; /* Equal space between both email blocks */
 }
 
-/* Emails (text links) */
+/* Each email block (icon + text) */
 .nav-icons .email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
   font-size: 14px;
-  color: #c49a6c; /* temple brown */
-  text-decoration: none;
   font-weight: 500;
+  color: #c49a6c;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
+/* Mail icon perfectly aligned with text baseline */
+.nav-icons .email-link i {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  vertical-align: middle;
+  transform: translateY(1px); /* slight lift adjustment */
+  color: #b47b34;
+}
+
+/* Hover */
 .nav-icons .email-link:hover {
   color: #a56a2c;
   text-decoration: underline;
 }
 
-/* Social icons (Instagram, LinkedIn) */
+/* LinkedIn icon alignment — slightly offset to the right */
 .nav-icons .icon-link {
-  font-size: 18px;
+  font-size: 17px;
   color: #c49a6c;
-  text-decoration: none;
+  position: relative;
+  top: 1px;
+  right: -10px; /* subtle right offset for balance */
   transition: color 0.2s ease;
 }
 
@@ -120,7 +140,7 @@ a:hover { opacity:.9 }
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
   .nav .container {
-    flex-wrap: wrap; /* stack items */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
     height: auto;
@@ -128,52 +148,22 @@ a:hover { opacity:.9 }
   }
 
   .nav-icons {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
     margin-top: 6px;
   }
 
   .nav-icons .email-link {
-    font-size: 12px;
+    font-size: 13px;
+    gap: 6px;
   }
 
   .nav-icons .icon-link {
     font-size: 16px;
+    right: 0;
   }
 }
-.email-link i {
-  margin-right: 6px;
-}
-
-
-/* ✅ Mobile-friendly adjustments */
-@media (max-width: 768px) {
-  .nav .container {
-    flex-wrap: wrap; /* stack items if needed */
-    justify-content: space-between;
-    padding: 0 10px;
-    height: auto;
-  }
-
-  .nav-left {
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .nav-icons {
-    margin-left: auto; /* keep icons to the far right */
-  }
-
-  .btn {
-    padding: 6px 12px;
-    font-size: 13px;
-  }
-}
-
 
 
 /* ---------- Buttons ---------- */
@@ -911,11 +901,11 @@ section:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav-icons .email-link {
-    font-size: 12px;
+    font-size: 15px;
     color: #c49a6c;
     white-space: nowrap;
   }
@@ -940,101 +930,7 @@ section:hover {
 
 
 
-  /* ---------- ✉️ PERFECT ALIGNMENT FOR EMAIL + SOCIAL ICONS ---------- */
-.nav-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-/* Email row styling */
-.email-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.email-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  font-size: 14px;
-  color: #c49a6c;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.email-link i {
-  font-size: 15px;
-  color: #b47414;
-  margin-right: 4px;
-  vertical-align: middle;
-}
-
-.email-link:hover {
-  color: #a56a2c;
-  text-decoration: underline;
-}
-
-/* Social icons row */
-.social-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.icon-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: #c49a6c;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.icon-link i {
-  vertical-align: middle;
-}
-
-.icon-link:hover {
-  color: #a56a2c;
-}
-
-/* ---------- Mobile: center everything neatly ---------- */
-@media (max-width: 768px) {
-  .nav-icons {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 6px;
-  }
-
-  .email-row {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .email-link {
-    font-size: 12px;
-  }
-
-  .social-row {
-    gap: 10px;
-  }
-
-  .icon-link {
-    font-size: 16px;
-  }
-}
-
+  
 
   /* Hero image and title fully visible */
   .hero {
@@ -1085,3 +981,105 @@ section:hover {
     border-radius: 22px;
   }
 }
+
+
+
+/* ---------- 📧 FINAL PERFECT EMAIL & SOCIAL ICON ALIGNMENT ---------- */
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* --- Email Row --- */
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* space between email blocks */
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px; /* space between icon and text */
+  font-size: 14px;
+  font-weight: 500;
+  color: #c49a6c;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.email-link i {
+  font-size: 15px;
+  line-height: 1;
+  transform: translateY(1px);
+  color: #b47b34;
+}
+
+/* Divider between emails */
+.email-divider {
+  color: #b47b34;
+  opacity: 0.6;
+  font-weight: 600;
+  margin: 0 2px;
+  font-size: 14px;
+}
+
+/* Hover */
+.email-link:hover {
+  color: #a56a2c;
+  text-decoration: underline;
+}
+
+/* --- Social Icons --- */
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+}
+
+.icon-link {
+  font-size: 17px;
+  color: #c49a6c;
+  position: relative;
+  top: 1px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-link:hover {
+  color: #a56a2c;
+  transform: scale(1.1);
+}
+
+/* --- Mobile Layout --- */
+@media (max-width: 768px) {
+  .nav-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .email-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .email-link {
+    font-size: 13px;
+  }
+
+  .email-divider {
+    display: none;
+  }
+
+  .icon-link {
+    font-size: 16px;
+    margin-left: 0;
+  }
+}
+
+
