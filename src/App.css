@@ -1352,3 +1352,222 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
     height: auto;
   }
 }
+
+
+/* ---------- Hero Section Enhancements ---------- */
+.hero-logo {
+  width: 420px;          /* was 260–400px */
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 18px rgba(139, 69, 19, 0.45));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-right h1 {
+  font-size: 1.5rem;     /* slightly larger name */
+  font-weight: 800;
+  color: #c5a651;
+  margin-bottom: 12px;
+  letter-spacing: 0.25px;
+}
+
+.hero .sub {
+  font-size: 0.95rem;
+  color: #614511;
+  font-weight: 600;
+}
+
+/* ✅ Keep mobile balanced */
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-right h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* ===== FINAL MOBILE NO-H-SCROLL PATCH ===== */
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* 1) hero glows off-screen → hide on mobile */
+  .hero {
+    overflow: hidden;
+  }
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
+  /* 2) carousels were forced visible with !important */
+  .carousel-wrapper,
+  .career-carousel {
+    overflow: hidden !important;
+  }
+  .carousel-container {
+    overflow-x: auto !important;
+    width: 100%;
+  }
+
+  /* 3) footer image was wide → keep inside */
+  .footer-content {
+    padding: 0 16px;
+  }
+  .footer-office-img {
+    max-width: 220px;
+  }
+
+  /* 4) containers: no surprise padding */
+  .container {
+    padding: 0 14px;
+  }
+}
+
+
+/* ===== mobile full-width fix ===== */
+@media (max-width: 768px) {
+  /* make sections touch the edges */
+  .hero,
+  .section,
+  #about,
+  .updates,
+  .form {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  /* hero content should also use full width */
+  .hero-content {
+    max-width: 60%;
+  }
+
+  /* containers: slimmer padding so text isn't stuck to edge */
+  .container {
+    padding: 0 14px;
+  }
+}
+
+/* ====== HERO CENTER ALIGNMENT FIX (MOBILE) ====== */
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* ✅ vertical center */
+    align-items: center;       /* ✅ horizontal center */
+    text-align: center;
+    min-height: 90vh;          /* fill most of the screen */
+    padding: 40px 16px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .hero-left,
+  .hero-right {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-logo {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 16px;
+  }
+
+  .hero-right h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .hero .sub {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .cta {
+    margin-top: 10px;
+  }
+}
+
+
+/* ===== 📱 Unified Top Section for Mobile ===== */
+@media (max-width: 768px) {
+  /* wrap everything above hero into one soft block */
+  .nav {
+    background: linear-gradient(180deg, #fffaf1, #fff6e3);
+    border-radius: 18px;
+    padding: 12px 8px 16px;
+    margin: 8px 10px;
+    box-shadow: 0 4px 10px rgba(154, 95, 12, 0.15);
+  }
+
+  /* make all nav links appear like part of one card */
+  .nav-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .nav-left a {
+    font-size: 13px;
+    color: #5f3b06;
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 12px;
+    border: 1px solid rgba(186, 128, 41, 0.25);
+    font-weight: 600;
+  }
+
+  /* Highlight active/contact button */
+  .nav-left a.btn,
+  .nav-left a[aria-current="page"],
+  .nav-left a.contact {
+    background: linear-gradient(135deg, #b47414, #cc8b1e);
+    color: #fff;
+    border: none;
+  }
+
+  /* emails + icons integrated below as same card */
+  .nav-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+  }
+
+  .nav-icons .email-link {
+    color: #8c661d;
+  }
+
+  .nav-icons .icon-link {
+    color: #a0701d;
+    font-size: 17px;
+  }
+}
+

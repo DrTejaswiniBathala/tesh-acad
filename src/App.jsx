@@ -121,7 +121,7 @@ export default function App() {
             <div className="hero-right">
               <h1>TESH ACAD INTERNATIONAL CONSULTANTS</h1>
               <p className="sub">
-                Admissions • Research • Visa • Skills • Jobs • MoUs — Connecting Talent with the World
+                  Connecting Talent with the World - Admissions • Research • Visa • Skills • Jobs • MoUs 
               </p>
               <div className="cta">
                 <a
