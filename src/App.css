@@ -1273,3 +1273,35 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
   text-decoration: underline;
 }
 
+/* existing desktop styles ... */
+
+.hero-logo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --------- Mobile fix --------- */
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    margin-bottom: 20px;
+  }
+
+  .hero-logo {
+    width: 160px;      /* smaller, fits mobile width */
+    height: 160px;     /* same as width → stays circle */
+    border-radius: 50%;
+  }
+}
