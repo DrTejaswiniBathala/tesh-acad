@@ -164,12 +164,9 @@ export default function App() {
   <h3>Dr. Urmila Bandaru Academy of International Publications</h3>
   <p>
     The <strong>Flagship Academy</strong> of TeSh Acad, dedicated to empowering
-    Researchers, Scholars, and Faculty Members across disciplines to publish in
-    Gobally recognized Journals (Q1–Q4, Scopus, SCI, Web of Science). The
-    Academy collaborated with leading Publishers, Editorial Boards, and
-    International reviewers to provide end-to-end publication support — from
-    Manuscript Refinement to Journal Acceptance. We stand as a global platform
-    driving Academic Excellence, Research Visibility, and Institutional
+    Researchers, Scholars, and Faculty Members across disciplines through end-to-end support in Research Publications 
+    across Globally recognized Journals (Q1–Q4, Scopus, Web of Science). We stand as a global platform
+    promoting Academic Excellence, Research Visibility, and Institutional
     Reputation Worldwide.
   </p>
   <div className="flagship-badge">✨CORE WING✨</div>
