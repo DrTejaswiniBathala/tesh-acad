@@ -4,6 +4,7 @@ import urmilaImg from './leadership/urmila.jpg';
 import tejaswiniImg from './leadership/tejaswini.jpg';
 import shravyaImg from './leadership/shravya.jpg';
 
+
 import utem from "./assets/UTEM.jpeg";
 import utm from "./assets/UTM.jpeg";
 import cybercrime from "./assets/CYBER CRIME.jpeg";
@@ -109,7 +110,11 @@ export default function App() {
           <div className="container hero-content">
             {/* Left: Logo */}
             <div className="hero-left">
-              <img src="/logo-circle.png" alt="TESH ACAD Logo" className="hero-logo" />
+              <img
+  src={process.env.PUBLIC_URL + "/teshlogo.png"}
+  alt="TESH ACAD Logo"
+  className="hero-logo"
+/>
             </div>
 
             {/* Right: Heading + tagline + button */}
@@ -136,6 +141,58 @@ export default function App() {
           <p>GSTIN - 37AQZPB1669H1ZC</p>
           <p>UDYAM-AP-07-0096832</p>
         </div>
+
+
+
+
+
+{/* ================== Wings of TeSh Acad ================== */}
+<section className="section wings">
+  <div className="container center">
+    <h2>Wings of TeSh Acad</h2>
+    <p className="sub">Specialized Academies under the Visionary Leadership of <strong>Dr. Urmila Bandaru</strong></p>
+
+    <div className="grid four">
+      <div className="wing-card">
+        <h3>Dr. Urmila Bandaru Academy of International Relations</h3>
+        <p>
+          Fostering Global Academic Alliances, MoUs, and Exchange Programs between Universities and Industries across Continents.
+        </p>
+      </div>
+
+      <div className="wing-card flagship">
+  <h3>Dr. Urmila Bandaru Academy of International Publications</h3>
+  <p>
+    The <strong>Flagship Academy</strong> of TeSh Acad, dedicated to empowering
+    Researchers, Scholars, and Faculty Members across disciplines to publish in
+    Gobally recognized Journals (Q1–Q4, Scopus, SCI, Web of Science). The
+    Academy collaborated with leading Publishers, Editorial Boards, and
+    International reviewers to provide end-to-end publication support — from
+    Manuscript Refinement to Journal Acceptance. We stand as a global platform
+    driving Academic Excellence, Research Visibility, and Institutional
+    Reputation Worldwide.
+  </p>
+  <div className="flagship-badge">✨CORE WING✨</div>
+</div>
+
+
+
+      <div className="wing-card">
+        <h3>Dr. Urmila Bandaru Academy of International Collaborations</h3>
+        <p>
+          Building Strategic Indo-Foreign Partnerships for Funded projects, Industrial Research, and Interdisciplinary Innovation Networks.
+        </p>
+      </div>
+
+      <div className="wing-card">
+        <h3>Dr. Urmila Bandaru Academy of Industry–Institute Interaction</h3>
+        <p>
+          Bridging Academia and Industry through Live Consultancy Projects, MoUs, Research Commercialization, and Skill-oriented Collaborations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -611,8 +668,8 @@ export default function App() {
         {/* ================== Contact ================== */}
         <section id="contact" className="section">
           <div className="container narrow contact">
-            <h2>Let our team reach out to you</h2>
-            <p>Tell us your goal. We’ll reply within 24 hours.</p>
+            <h2>Let our Team reach out to You</h2>
+            <p>Tell us your Goal. We’ll reply within 24 hours.</p>
 
             <form
               action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT"
@@ -637,7 +694,7 @@ export default function App() {
                 <textarea
                   name="message"
                   rows="5"
-                  placeholder="Course/Country, target intake, questions…"
+                  placeholder="Course/Country, Target intake, Questions…"
                   required
                 />
               </div>
@@ -649,7 +706,7 @@ export default function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  WhatsApp us
+                  WhatsApp Us
                 </a>
               </p>
             </form>
@@ -659,11 +716,31 @@ export default function App() {
 
       {/* Footer */}
       <footer className="footer">
-  <div className="container">
-    © {new Date().getFullYear()} TESH ACAD. All rights reserved. | 
-    <a href="/policies.html" className="ml-2">Terms & Privacy</a>
+  <div className="container footer-content">
+    <div className="footer-left">
+      <p>
+        © {new Date().getFullYear()} <strong>TESH ACAD</strong>. All rights reserved. |
+        Developed and hosted by <strong>TeSh Acad Chief Technical Team</strong>. |
+        Last updated: <strong>Nov 07, 2025</strong>
+      </p>
+      <p>
+        📍 <strong>Office Address:</strong> 87-482-1, Srinagar Colony, Kurnool, Andhra Pradesh, India – 518002
+      </p>
+      <a href="/policies.html" className="footer-link">Terms & Privacy</a>
+    </div>
+
+    <div className="footer-right">
+      <img
+        src={process.env.PUBLIC_URL + "/office.jpeg"}
+        alt="TeSh Acad Office"
+        className="footer-office-img"
+      />
+    </div>
   </div>
 </footer>
+
+
+
 
 
       {/* Floating WhatsApp button */}

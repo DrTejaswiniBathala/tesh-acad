@@ -692,73 +692,6 @@ h2 + .sub { margin-top:-6px; margin-bottom:18px }
 
 
 
-/* =========================================================
-   ROUNDED SECTION STYLING (Round-style layout for all pages)
-   ========================================================= */
-
-section,
-#about,
-.updates,
-.footer,
-.hero,
-.leadership-grid,
-.form,
-.person,
-.card,
-.contact-section {
-  border-radius: 36px;
-  margin: 40px auto;
-  padding: 60px 40px;
-  background: #fff;
-  box-shadow: 0 6px 24px rgba(91, 70, 20, 0.08);
-  overflow: hidden;
-  max-width: 1200px;
-}
-
-/* Give alternating sections soft beige background for contrast */
-section:nth-of-type(2n) {
-  background: var(--gold-050);
-}
-
-/* Hero full width but still rounded container look */
-.hero {
-  border-radius: 0 0 60px 60px;
-  margin-bottom: 60px;
-  padding-top: 80px;
-  background: linear-gradient(180deg, #fff, var(--gold-100));
-  box-shadow: var(--shadow-md);
-}
-
-/* Smooth transition between rounded sections */
-section + section {
-  margin-top: 80px;
-}
-
-/* Responsive rounding tweaks */
-@media (max-width: 768px) {
-  section,
-  #about,
-  .updates,
-  .form {
-    border-radius: 24px;
-    padding: 40px 20px;
-    margin: 20px;
-  }
-
-  .hero {
-    border-radius: 0 0 40px 40px;
-  }
-}
-
-/* Optional hover lift for visual appeal */
-section:hover {
-  transform: translateY(-4px);
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-md);
-}
-
-
-
 /* ======== CAREERS SECTION — Auto-scroll horizontally ======== */
 #careers {
   background: #fffaf3;
@@ -1082,4 +1015,261 @@ section:hover {
   }
 }
 
+
+/* ================= Hero Logo Styling ================= */
+.hero-logo {
+  width: 400px;                   /* increased size */
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 18px rgba(139, 69, 19, 0.45)); /* temple brown glow */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 22px rgba(139, 69, 19, 0.65));
+}
+
+.hero-left {
+  flex: 1;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hero-right {
+  flex: 2;
+  padding-left: 40px;
+}
+
+
+
+
+/* ========== Section Backgrounds ========== */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* 🎓 Students Section */
+#students {
+  background-image: url("./assets/students-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#students::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+#students .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 👩‍💼 Professionals Section */
+#Professionls {
+  background-image: url("./assets/professional-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#Professionls::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+#Professionls .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🏫 Institutes Section */
+#institutes {
+  background-image: url("./assets/institute-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#institutes::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+#institutes .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 🏭 Industry Section */
+#industry {
+  background-image: url("./assets/industry-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#industry::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+#industry .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+/* ================== Wings Section ================== */
+.wings {
+  background: linear-gradient(180deg, #fffaf4, #f7efe2);
+  padding: 80px 0;
+}
+
+.wings h2 {
+  color: #6b4000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.wings .sub {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wing-card {
+  background: #ffffffd5;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(165, 128, 74, 0.15);
+  padding: 25px;
+  transition: all 0.3s ease;
+  text-align: left;
+  border-top: 4px solid #a5804a;
+}
+
+.wing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(165, 128, 74, 0.3);
+  background: #fff9f2;
+}
+
+.wing-card h3 {
+  color: #a5804a;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.wing-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+/* Highlight flagship academy */
+.wing-card.flagship {
+  background: linear-gradient(135deg, #fff7e6, #fff);
+  border-top: 5px solid #b8860b;
+  box-shadow: 0 6px 16px rgba(184, 134, 11, 0.3);
+}
+
+.wing-card.flagship h3 {
+  color: #b8860b;
+  font-size: 1.15rem;
+}
+
+
+/* ===== Flagship Academy Badge ===== */
+.flagship-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #b8860b, #a8702a);
+  color: #fff;
+  font-weight: 1000;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(184, 134, 11, 0.3);
+}
+.wing-card.flagship {
+  background: linear-gradient(135deg, #fff9e9, #ffffff);
+  border-top: 5px solid #b8860b;
+  box-shadow: 0 8px 20px rgba(184, 134, 11, 0.25);
+}
+
+
+
+.footer {
+  background: #f8f5ef;
+  color: #5c3c11;
+  font-size: 0.9rem;
+  padding: 25px 0;
+  border-top: 2px solid rgba(160, 112, 29, 0.2);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns image and text perfectly */
+  flex-wrap: wrap; /* Makes it responsive */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-left {
+  flex: 2;
+  line-height: 1.6;
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-office-img {
+  width: 300px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid #a0701d;
+  box-shadow: 0 4px 10px rgba(160, 112, 29, 0.25);
+}
+
+.footer strong {
+  color: #a0701d;
+  font-weight: 600;
+}
+
+.footer-link {
+  color: #a0701d;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
 
